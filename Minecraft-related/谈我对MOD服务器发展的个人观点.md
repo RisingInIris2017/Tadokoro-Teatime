@@ -1,26 +1,26 @@
 # 谈我对MOD服务器发展的个人观点
 ## 本文目录
-- [谈我对MOD服务器发展的个人观点]
-  * [前言]
-  * [第一个问题：怎么看待Bug？]
-    + [摆正态度很重要]
-    + [以救火为例，谈谈我对 Bug 的理解]
-    + [什么是对待 Bug 的正确态度？]
-    + [总结：我们应当如何对待 Bug]
-  * [第二个问题：怎么看待老旧的 MOD 和游戏版本？]
-    + [旧不如新]
-    + [旧不如新也适用于 Minecraft]
-    + [旧不如新也适用于非官方的 Minecraft 内容]
-      - [服务端]
-      - [插件]
-      - [Forge 和 Fabric]
-      - [Mod]
-    + [你不更新的理由？]
-      - [不喜欢新版本的某些特性]
-      - [高版本没 MOD]
-      - [高版本优化差]
-  * [第三个问题：消除对 MOD 服的感性偏见]
-  * [总结]
+- 谈我对MOD服务器发展的个人观点
+  * 前言
+  * 第一个问题：怎么看待Bug？
+    + 摆正态度很重要
+    + 以救火为例，谈谈我对 Bug 的理解
+    + 什么是对待 Bug 的正确态度？
+    + 总结：我们应当如何对待 Bug
+  * 第二个问题：怎么看待老旧的 MOD 和游戏版本？
+    + 旧不如新
+    + 旧不如新也适用于 Minecraft
+    + 旧不如新也适用于非官方的 Minecraft 内容
+      - 服务端
+      - 插件
+      - Forge 和 Fabric
+      - Mod
+    + 你不更新的理由？
+      - 不喜欢新版本的某些特性
+      - 高版本没 MOD
+      - 高版本优化差
+  * 第三个问题：消除对 MOD 服的感性偏见
+  * 总结
   
 ## 前言
 我与 MOD 服结缘始于 2015 年下半年，比很多在 MOD 服这个领域摸爬滚打的大佬，
@@ -197,17 +197,17 @@ Minecraft 这款游戏是在不断进步的，而且进步很快。
 
 #### 服务端
 
-这是 [SpongeForge，大家很熟悉的新时代 Mod 服服务端的更新履历](https://github.com/SpongePowered/SpongeForge/commits/stable-7)。
+这是 [SpongeForge，大家很熟悉的新时代 Mod 服服务端的更新履历](https://github.com/SpongePowered/SpongeForge/commits/)。
 
-这是 [Catserver，大家也很熟悉的新时代 Mod 服服务端的更新履历](https://github.com/Luohuayu/CatServer/commits/1.12.2)。
+这是 [Catserver，大家也很熟悉的新时代 Mod 服服务端的更新履历](https://github.com/Luohuayu/CatServer/commits/)。
 
 可以看到更新是非常频繁的，你在吃饭睡觉打豆豆的时候，这些勤勉的作者都有可能正在电脑前冥思苦想和码代码，更新服务端。
 
 #### 插件
 
-这是大家都很喜欢的 [老牌管理插件 Essential，或者简称 Ess 的更新履历。](https://github.com/EssentialsX/Essentials/commits/2.x)。
+这是大家都很喜欢的 [老牌管理插件 Essential，或者简称 Ess 的更新履历。](https://github.com/EssentialsX/Essentials/commits/)。
 
-这是大家经常在用的 [新时代权限组插件 LuckPerm，或者简称 LP 权限组的更新履历。](https://github.com/lucko/LuckPerms/commits/master)。
+这是大家经常在用的 [新时代权限组插件 LuckPerm，或者简称 LP 权限组的更新履历。](https://github.com/lucko/LuckPerms/commits/)。
 
 我选取这两位重量级选手，一个代表了 Spigot 社区，另一个代表了 Sponge 社区。
 
@@ -219,13 +219,13 @@ Minecraft 这款游戏是在不断进步的，而且进步很快。
 
 Forge，我们非常熟悉的 Mod 前置（或称为 API，你喜欢怎么称呼都行）。
 
-https://github.com/MinecraftForge/MinecraftForge/commits/1.15.x
+https://github.com/MinecraftForge/MinecraftForge/commits/
 
 Fabric，大家可能比较陌生的 API，在 1.14.x 以上版本早于 Forge 出现，因而广受好评。
 
 Fabric 依赖全新的映射表 Yarn（有别于 Forge 使用的 MCP）进行工作，我们可以看到 Yarn 的更新履历
 
-https://github.com/FabricMC/yarn/commits/20w09a
+https://github.com/FabricMC/yarn/commits/
 
 #### Mod
 
@@ -233,15 +233,15 @@ https://github.com/FabricMC/yarn/commits/20w09a
 
 交错次元，最近在 [MCBBS](https://www.mcbbs.net/thread-804242-1-1.html) 和 [MCMOD 百科](https://www.mcmod.cn/class/499.html)都很火的一款 MOD，不少 1.12.2 的服主已经装上它了。
 
-https://github.com/Angry-Pixel/The-Betweenlands/commits/1.12-dev
+https://github.com/Angry-Pixel/The-Betweenlands/commits/
 
 [巫术学](https://www.mcmod.cn/class/1634.html)，有潜力成为新一代魔法 MOD 的老牌翻新 MOD。
 
-https://github.com/Electroblob77/Wizardry/commits/1.12.2
+https://github.com/Electroblob77/Wizardry/commits/
 
 最后是我们的重量级老牌魔法 MOD 植物魔法，不需要我多介绍了。
 
-https://github.com/Vazkii/Botania/commits/master
+https://github.com/Vazkii/Botania/commits/
 
 可以看到各位 MOD 作者更新 MOD 的频率都是相当惊人的。
 
