@@ -1,0 +1,389 @@
+[size=4][b]本文目录[/b][/size]
+
+[list]
+[*]谈我对MOD服务器发展的个人观点[list]
+[*]前言
+[*]第一个问题：怎么看待Bug？[list]
+[*]摆正态度很重要
+[*]以救火为例，谈谈我对 Bug 的理解
+[*]什么是对待 Bug 的正确态度？
+[*]总结：我们应当如何对待 Bug[/list][/size]
+[*]第二个问题：怎么看待老旧的 MOD 和游戏版本？[list]
+[*]旧不如新
+[*]旧不如新也适用于 Minecraft
+[*]旧不如新也适用于非官方的 Minecraft 内容[list]
+[*]服务端
+[*]插件
+[*]Forge 和 Fabric
+[*]Mod[/list][/size]
+[*]你不更新的理由？[list]
+[*]不喜欢新版本的某些特性
+[*]高版本没 MOD
+[*]高版本优化差[/list][/size][/list][/size]
+[*]第三个问题：消除对 MOD 服的感性偏见
+[*]总结[/list][/size][/list][/size]
+[size=4][b]前言[/b][/size]
+
+我与 MOD 服结缘始于 2015 年下半年，比很多在 MOD 服这个领域摸爬滚打的大佬，
+包括开服的老服主，玩服务器的老玩家，开发 MOD 的老程序员，都算得上是年轻很多，该称呼各位一声前辈。
+MOD 服作为 MC 的一种玩法，自其诞生以来，极大地拓展了 MC 本身的游戏内容，给无数的玩家，带去了无尽的欢乐。
+以我个人观点，[b]“开放”，是 Minecraft 这款游戏的生命。[/b]
+没有来自玩家社区的内容，没有 Java 开发者社区在背后的默默支持，Minecraft 不会取得今天的成就。
+
+正因如此，没有任何一款其他游戏像 Minecraft 这样强调“开放”：
+你很难再见到别的游戏有 Minecraft CurseForge，SpigotMC，SpongePowered  这样的巨型第三方平台社区，
+更难见到在上面托管的数以万计的，来自开发者（Mojang）、玩家以外，第三方创作的游戏额外内容。
+所以我再次要说，开放是 MC 的生命。
+这一点我想各位前辈，以及后来的新玩家们，是公认的。
+[hr]
+但 MOD 服这种玩法又一直受到诟病。
+
+我们来做一个小游戏：当提到 MOD 服时，你脑海里浮现出的词汇是什么？
+
+[i]宝可梦-氪金-骗钱？[/i][/size]
+
+[i]1.7.10-工业-神秘-植魔-拔刀剑？[/i][/size]
+
+[i]崩溃-Bug-刷物品？[/i][/size]
+
+我相信大多数不喜欢 MOD 服的玩家脑海里都有这些词。成天在开 MOD 服，
+甚至可能将其作为盈利手段的服主，心里可能也给 MOD 服贴了这些标签。
+
+我甚至更进一步，大胆地说：就算是真心喜欢 MOD 服这种玩法的玩家 / 真的以开 MOD 服为乐趣的服主，
+提到 MOD 服时也会想到这些词。
+这就是国内 Minecraft 圈子对于 MOD 服的刻板印象，整体是中性偏负面的。
+如果 MOD 服的发展继续被这样的刻板印象的阴云笼罩着，我想 MOD 服的前景不会是一片光明。
+
+所以，是时候打破这种刻板印象，给大家的思想剪辫子，重新认识 MOD 服了。
+接下来，我将以回答问题的形式，表达我对于 MOD 服务器发展方向的看法。
+
+[i]当大家沉在梦里的时候，总要有一个人先起来大声疾呼。
+我愿意做这个起来疾呼的人。[/i]
+
+[size=4][b]第一个问题：怎么看待Bug？[/b][/size]
+
+[size=3][b]摆正态度很重要[/b][/size]
+
+我在 MCBBS 看到过一句话：
+[i]MOD 服给我的印象就是 bug[/i]
+
+我毫不避讳这一点。是的，与任何其他的软件一样，MOD 也会存在 Bug。
+尤其是近期 MCBBS 流传一张 MOD 的 Bug 列表，
+列表的作者甚至附上了一句，大意是“Bug 修复之前请大家关服”这样的话，
+使得一部分服主灰心丧气，决定不再开MOD服。
+
+[b]但是，我要说，这是一股歪风。[/b]
+
+首先我想请问把 Bug 挂在嘴边的各位大佬们，你真的理解 Bug 这个词的意义吗？
+
+维基词典的解释是：
+[quote]（主要见于计算机和工程领域的行话）一个[b]需要修复[/b]的问题
+(chiefly computing and engineering jargon) A problem that [b]needs fixing[/b].
+[align=right]—— [url=https://en.wiktionary.org/wiki/bug#Noun]Wiktionary - Bugs[/url]，第五条[/align][/quote]
+
+是的，“需要修复”，意味着 Bug 是需要采取[b]积极的态度[/b]去应对、去解决、去修复的，
+而不是消极地舍弃 MOD 玩法。
+
+如果你不能体会这句话的含义，那我打个比方。
+
+[size=3][b]以救火为例，谈谈我对 Bug 的理解[/b][/size]
+
+现在你的家着火了。如果你身强力壮，并掌握一定的消防常识，你当然可以自己动手扑救；
+如果你还不足以完成救火的任务，你起码应该拨打 119 请专业的消防员来救火。
+在拨打电话的时候，你一定会讲清楚自己所处的地点、着火的原因、可燃物的种类等必要信息，便于消防员采用正确的手段进行扑救；
+但绝对不是放任大火把你的家烧个精光。
+概括起来，就是：有能力就帮忙，没有能力就汇报给有能力的人，总之不能放弃。
+这三条原则已经被写入法律，有兴趣的玩家可以阅读[url=https://duxiaofa.baidu.com/detail?searchType=statute&from=aladdin_28231&originquery=%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E6%B6%88%E9%98%B2%E6%B3%95&count=74&cid=fb2248d339633aed424dd599b525054c_law]《中华人民共和国消防法》[/url]。 第一章第五条，和第四章第四十四条
+
+[size=3][b]什么是对待 Bug 的正确态度？[/b][/size]
+
+我要说的是，救 Bug 和救火，本质上是一个道理。
+你有编程开发的能力，就一起参与修 Bug；
+没有编程开发的能力，就汇报给有能力的人，让他们去解决；
+汇报的时候，像说清楚着火的位置、燃烧物的种类一样，说清楚 Bug 是怎么产生的。
+对于 Minecraft，我们还有一种有力的武器称为崩溃报告，把它带上。
+[b]但总之不能就此放弃，认定 MOD 服无药可救。[/b]
+
+很多玩家和服主不适应 Minecraft 的这种整个社区一起努力修 Bug 的氛围，认为自己在面对 Bug 的时候是孤立无援的；
+宁愿求助于重启游戏、重装游戏、重装系统、重买电脑的“四重”玄学，也不愿意了解一下 [url=https://www.mcbbs.net/thread-812259-1-1.html]崩溃报告到底应该怎么使用[/url]
+事实上我要说，你在这场与 Bug 作斗争的战争中永远不是孤军！
+按照下面的方法，勇敢地，第一次，向那些程序员大牛们反馈 Bug！
+[url=https://www.mcbbs.net/thread-812259-1-1.html]https://www.mcbbs.net/thread-812259-1-1.html[/url]
+中国有句俗话，“办法总比困难多。”大家有理由相信，Bug 是可以修复的；
+只要大家都能做到认真、有效地进行 Bug 的反馈和修复工作，一切 Bug 都是纸老虎。
+
+[size=3][b]总结：我们应当如何对待 Bug[/b][/size]
+
+我将我的以上观点浓缩成以下几点
+[list=1]
+[*]不要惧怕 Bug
+[*]学会如何反馈
+[*]及时更新[/list][/size]
+以上三点不但适用于 MOD，也适用于插件、服务端等等。
+
+说到“及时更新”，那么就引出了我们接下来的下一个问题：
+[b]怎么看待老旧的 MOD 和游戏版本。[/b]
+
+[size=4][b]第二个问题：怎么看待老旧的 MOD 和游戏版本？[/b][/size]
+
+[size=3][b]旧不如新[/b][/size]
+
+首先要给大家分享一个我的观点：
+[b]任何在计算机技术领域内的东西[/b]，包括但不限于硬件、[b]软件[/b]、外设，诸如此类，绝大多数情况下，旧不如新。
+支撑我这个观点的理由？就[b]软件[/b]而言，各位如果对 GitHub 有个了解，就很清楚地可以知道，我们为什么要“更新”这些软件。
+在 GitHub 上，你可以看到一个托管在上面的软件的源代码，看到这个软件的作者每天在更新些什么东西。
+软件作者的更新包含两个方面：
+[list=1]
+[*]修复旧Bug
+[*]增加新特性，同时可能引入一些新Bug[/list][/size]
+这就是软件“进化”的过程，我们可以看到，大体上，这个软件是在往更好的方向迈进的。
+
+[size=3][b]旧不如新也适用于 Minecraft[/b][/size]
+
+讲了这么多，我们回到 Minecraft。它也是软件。
+MCBBS 可能有上古老玩家接触过1.2.5，这个 MOD 第一次大爆发的版本
+工业时代 MOD 就是在那个时候登上了 MC 的历史舞台，成为一个长盛不衰的 MOD
+到如今的主流 MOD 版本1.7.10, 1.12.2，MC 本身新增了多少特性？修复了多少 Bug？
+这两个问题的答案都是有据可查的。新增的特性可以在 Minecraft Wiki 上查到，修复的 Bug 不妨看看 Mojang 的 [url=https://bugs.mojang.com/projects/MC?selectedItem=com.atlassian.jira.jira-projects-plugin:report-page]漏洞追踪器[/url]
+
+由此可见，尽管 Mojang 被戏称为 Bugjang，但是在修 Bug 这件事上，Mojang 是认真的。
+那我可以更进一步得出下面的结论：就 Minecraft 的游戏本体而言，不谈非官方的内容（包括但不限于服务端、插件、Mod）的情况下，
+Minecraft 这款游戏是在不断进步的，而且进步很快。
+
+所以，[b]Minecraft 本体是 [i]旧不如新[/i] 的。[/b]
+
+[size=3][b]旧不如新也适用于非官方的 Minecraft 内容[/b][/size]
+
+那么我们再来看看非官方的内容。服务端、插件、Mod 的前置、Mod。
+我各举几个例子。
+
+[b]服务端[/b]
+
+这是 [url=https://github.com/SpongePowered/SpongeForge/commits/]SpongeForge，大家很熟悉的新时代 Mod 服服务端的更新履历[/url]。
+这是 [url=https://github.com/Luohuayu/CatServer/commits/]Catserver，大家也很熟悉的新时代 Mod 服服务端的更新履历[/url]。
+可以看到更新是非常频繁的，你在吃饭睡觉打豆豆的时候，这些勤勉的作者都有可能正在电脑前冥思苦想和码代码，更新服务端。
+
+[b]插件[/b]
+
+这是大家都很喜欢的 [url=https://github.com/EssentialsX/Essentials/commits/]老牌管理插件 Essential，或者简称 Ess 的更新履历[/url]
+这是大家经常在用的 [url=https://github.com/lucko/LuckPerms/commits/]新时代权限组插件 LuckPerm，或者简称 LP 权限组的更新履历[/url]。
+我选取这两位重量级选手，一个代表了 Spigot 社区，另一个代表了 Sponge 社区。
+
+[i]没有偷懒不更新插件的作者，只有偷懒不更新插件的服主。[/i][/size]
+
+[b]Forge 和 Fabric[/b]
+
+终于要谈到我们的正题 Mod 上了。
+
+Forge，我们非常熟悉的 Mod 前置（或称为 API，你喜欢怎么称呼都行）
+[url=https://github.com/MinecraftForge/MinecraftForge/commits/]https://github.com/MinecraftForge/MinecraftForge/commits/[/url]
+
+Fabric，大家可能比较陌生的 API，在 1.14.x 以上版本早于 Forge 出现，因而广受好评。
+
+Fabric 依赖全新的映射表 Yarn（有别于 Forge 使用的 MCP）进行工作，我们可以看到 Yarn 的更新履历：
+[url=https://github.com/FabricMC/yarn/commits/]https://github.com/FabricMC/yarn/commits/[/url]
+
+[b]MOD[/b]
+
+最后我们来看 MOD。
+
+交错次元，最近在 [url=https://www.mcbbs.net/thread-804242-1-1.html]MCBBS[/url] 和 [url=https://www.mcmod.cn/class/499.html]MCMOD 百科[/url]都很火的一款 MOD，不少 1.12.2 的服主已经装上它了
+[url=https://github.com/Angry-Pixel/The-Betweenlands/commits/]https://github.com/Angry-Pixel/The-Betweenlands/commits/[/url]
+[url=https://www.mcmod.cn/class/1634.html]巫术学[/url]，有潜力成为新一代魔法 MOD 的老牌翻新 MOD。
+[url=https://github.com/Electroblob77/Wizardry/commits/]https://github.com/Electroblob77/Wizardry/commits/[/url]
+最后是我们的重量级老牌魔法 MOD 植物魔法，不需要我多介绍了
+[url=https://github.com/Vazkii/Botania/commits/]https://github.com/Vazkii/Botania/commits/[/url]
+可以看到各位 MOD 作者更新 MOD 的频率都是相当惊人的；
+MOD 社区欣欣向荣，蓬勃发展的前进势头可见一斑。
+
+综上所述，整个 Minecraft，从游戏本身到第三方服务端、插件、MOD等第三方内容，都是[b]旧不如新[/b]的。
+
+那么为什么有些玩家、服主，不愿意更新呢？
+接下来，我就常见的几个不更新的理由进行分析。
+
+[size=3][b]你不更新的理由？[/b][/size]
+
+[b]不喜欢新版本的某些特性[/b]
+
+这个理由是相当常见的，但是是完全可以解决的。
+
+我仅举一例。
+很多玩家由于不喜欢 Minecraft 1.9 版本引入的战斗机制，拒绝更新 1.9 以上版本。
+解决方法：
+MOD 服：[url=https://www.curseforge.com/minecraft/mc-mods/classic-combat]https://www.curseforge.com/minecraft/mc-mods/classic-combat[/url] 已经支持到 1.14，可以移除高版本的攻击冷却机制
+pigot 系插件服：[url=https://www.spigotmc.org/resources/oldcombatmechanics-disable-1-9-hit-cooldown.19510/]https://www.spigotmc.org/resources/oldcombatmechanics-disable-1-9-hit-cooldown.19510/[/url]
+
+还有一些曲线救国的方法，例如利用 JoinEffects 插件给玩家施加永久的急迫 Buff 来缩短攻击冷却时间。
+还有不少你可能不喜欢的新版本特性，都有类似的方法予以解决。
+所以这个理由是不成立的，下一个。
+
+[b]高版本没 MOD[/b]
+
+首先要驳斥一个在 MC 圈子广为流行的论调：1.7.10 是 MOD 最多的版本。
+
+在批驳之前，各位应该都能接受我的以下论点：
+
+众所周知，CurseForge 是绝大多数 Minecraft MOD 发布的网站，你所熟知的 MOD 几乎都可以在 CurseForge 上找到
+因此，统计 CurseForge 上的 MOD 数量，就基本可以代表某个游戏版本对应的 MOD 的数量。
+
+如果你认同以上观点，那么请看 CurseForge 上，1.7.10 MOD 的页码总数，和 1.12.2 MOD 的页码总数。 
+[align=center][img]https://s2.ax1x.com/2020/02/28/3BlZnO.png[/img][/align]
+可以看到，1.7.10 的 MOD 有 205 页，以每页 20 个 MOD 计算，1.7.10 的 MOD 总数约为 4100 个。
+
+那我们来看看 1.12.2 版本。
+[align=center][img]https://s2.ax1x.com/2020/02/28/3BleBD.png[/img][/align]
+[b]358 页，[color=Red]比 1.7.10 整整多出了 153 页，多出 153x20=3060 个 MOD，[/color]几乎达到了 1.7.10 的两倍。[/b]
+
+[b]我可以下这样的论断：1.12.2 是 MOD 最多的版本。[/b][/size]
+
+再次请出我百用不厌、屡试不爽的链接：[url=https://howoldisminecraft1710.today/]https://howoldisminecraft1710.today/[/url]
+1.7.10 作为一个 [b]过于久远的、停止更新的[/b] 游戏版本，[b]已经被 MOD 开发社区所抛弃[/b]。
+
+其次，我要谈及的是主流 MOD 的变化。
+大家都知道工业、神秘、拔刀剑的“御三家”。随着神秘时代 6 停止更新，植物魔法取代神秘时代成为新御三家是不可阻挡的趋势。
+绝大多数 1.7.10 的工业时代附属、拔刀剑附属已经升级到 1.12.2。
+对于拔刀剑，在这里隆重推荐两个重量级的附属包。
+[url=https://www.mcbbs.net/thread-710736-1-1.html][1.12.2-1.7.10][The Last Smith—最后的太刀匠人][已开源]一个更大型的拔刀剑附属[/url]
+[url=https://www.mcbbs.net/thread-836114-1-1.html][1.12.2][SlashBlade Japanese Addon Pack——拔刀剑日系附属包] 老牌附属回来了[/url]
+(出处: Minecraft(我的世界)中文论坛)
+移植了绝大部分你熟知的附属。
+一部分附属没有被移植的原因，大概是因为它们不够优秀吧。
+
+此外还要谈及一个主流 MOD：合成表查询 MOD。
+不少玩家还活在被 1.7.10 的 G 键合成支配的阴影之下，以至于不管玩什么整合包，都要下意识地去按按 G 键。
+
+[i]和它说再见吧[/i]。
+
+G 键合成太过老旧，以至于不能支持高版本 MOD 的复杂合成表，包括你熟悉的工业机器、神秘注魔、植物魔法仪式。
+此外，JEI 还具有高度的可扩展性，在安装了扩展后，可以支持显示方块掉落、村民交易等等。
+[b]NEI 和 JEI 将取代 G 键合成成为新的主流，也同样是不可抗拒的趋势。[/b]
+由于高版本 NEI 的基本功能已经全部交给 JEI，因此下方仅贴出 JEI 的相关链接，你如果还不了解的话请赶快看看。
+[url=https://www.mcbbs.net/thread-660463-1-1.html]https://www.mcbbs.net/thread-660463-1-1.html[/url]
+
+最后，我要谈及 [b]要勇于接受新生事物[/b] 这一被我反复提起的观点。
+有那么多新的 MOD 可以玩，为什么大家不去接受它们呢？
+送给大家我的另一篇文章，这里不再赘述。
+[url=https://github.com/RisingInIris2017/Tadokoro-Teatime/blob/master/Minecraft-related/%E5%AF%B9%E4%BA%8EMC%E5%9C%88%E5%AD%90%E6%9C%AA%E6%9D%A5%E5%8F%91%E5%B1%95%E7%9A%84%E4%B8%AA%E4%BA%BA%E8%A7%82%E7%82%B9.md]对于MC圈子未来发展的个人观点[/url]
+
+综上所述，“高版本没 MOD”这种不更新的理由是 [b]根本站不住脚的[/b]。
+继续相信这种谬论，对于你的服务器的良性发展，乃至对于整个 MC 圈子的发展都是 [b]有百害而无一利[/b] 的。
+你应当[b]尽快摒弃这种[color=Red]过时[/color]的观点[/b]。
+
+[b]高版本优化差[/b]
+
+首先我要谈及一个问题。“优化”，从来就不是一个简单的问题。
+优化是一个千头万绪的问题，在软件层面，至少涉及到服务端、MOD、插件、Minecraft 本身这四个方面；[/size]
+在硬件层面，至少涉及到服务器的硬件条件、服务端到客户端的网络条件，和客户机（玩家的电脑）的硬件条件三个方面，
+加起来至少有七个方面的问题。
+[i]你以为服务器 TPS 低、客户端 FPS 低就是高版本的原因吗？[/i]
+未免有些武断了。
+[b]旧的版本未必优化就好；新的版本未必优化就差。[/b]
+
+但我在这里又要说：[i]优化并非玄学[/i]，而是有 [b]科学[/b] 的方式可循。
+我在这里举出几个实用工具的例子，供大家参考。
+如果有其他的门道愿意分享的，可以回复在下面加以补充。
+
+[b]优化短板排查工具[/b]
+
+[url=https://www.spigotmc.org/resources/spark.57242/]Spark[/url] 可以用来分析你的服务器硬件使用情况。
+尤其是具备了分析服务端本身/插件/MOD 占用 CPU 时间百分比的功能，非常适合排查服务端的优化短板。
+此外，Spark 产生的分析报告是被服务端/插件/MOD 作者认可的证据，足以证明他们开发的程序存在优化问题。并且能指导他们优化、改进的方向。
+因此 [b]在你向他们反馈优化问题的时候，带上 Spark 分析报告[/b] 是很有用的。
+
+[b]优化工具[/b]
+
+首先是 MOD。
+
+[url=https://www.curseforge.com/minecraft/mc-mods/vanillafix]VanillaFix[/url]
+VanillaFix 是集 Bug 修复、游戏优化和改进游戏崩溃机制于一体的 [b]1.12.2 专属[/b] 优化 MOD。
+[url=https://www.mcbbs.net/thread-792493-1-1.html][1.12.x][VF——原版修复]游戏不再崩溃，提升三倍FPS，整合包加载速度提高50％！[FS][/url]
+(出处: Minecraft(我的世界)中文论坛)[/size]
+在这篇介绍中把 VanillaFix 吹得神乎其神，你相信也好，不信也罢。
+
+[url=https://www.curseforge.com/minecraft/mc-mods/surge]Surge[/url]
+Surge 是一个 [b]纯客户端[/b] 优化 MOD，主要的用处是在需要加载大量 MOD 的客户端中，加快客户端的载入，缩短启动游戏的时间。
+[url=https://www.mcbbs.net/thread-923335-1-1.html][1.12.2][Surge——潮涌]感受渣机如潮涌一般迅速！[/url]
+(出处: Minecraft(我的世界)中文论坛)
+这篇介绍中把 Surge 吹得神乎其神，你相信也好，不信也罢。
+
+[url=https://www.mcbbs.net/thread-678442-1-1.html]FoamFix[/url]
+FoamFix 的主要功能是减少吃内存大户 Minecraft 的内存占用。
+MCMOD 百科有这么一张图： 
+[align=center][img]https://i.mcmod.cn/editor/upload/20180210/1518236066_7254_HpNq.png[/img][/align]。
+原图是 FoamFix 的作者画的，中文是 [url=https://www.mcmod.cn/center/7254/]sxjsxj[/url] 大佬加的。
+[url=https://www.mcbbs.net/thread-678442-1-1.html][1.14-1.8][FoamFix——减少内存使用]【优化MOD】[/url]
+(出处: Minecraft(我的世界)中文论坛)[/size]
+这篇介绍是著名的服主、服务端整合包作者、教程作者 [url=https://www.mcbbs.net/?284709]@酷车手BB弹[/url] 的手笔，你相信也好，不信也罢。
+
+[url=https://optifine.net/home]Optifine[/url]
+著名的高清修复，不仅是光影的前置，更是老牌的[b]客户端[/b]渲染优化 MOD
+我想不用我多介绍了。
+
+[url=https://www.curseforge.com/minecraft/mc-mods/phosphor]Phosphor[/url]
+主要修复光照问题引起的服务端/客户端卡顿。
+[i]据说猫端是自带了这个功能的，那猫端大概可以不装。[/i][/size]
+但是客户端装一下是没有害处的。
+[url=https://www.mcbbs.net/thread-853660-1-1.html][1.12.2][Phosphor——照明优化]提高性能的优化mod[/url]
+(出处: Minecraft(我的世界)中文论坛)[/size]
+老规矩，你相信也好，不信也罢。
+
+接下来是插件。
+插件方面我不大熟悉，这一块的介绍会比较主观，可能有偏差。
+你们相信也好，不信也罢。
+两款 Spigot 插件
+[url=https://www.spigotmc.org/resources/laggremover.6149/]LaggRemover[/url] 和 [url=https://www.spigotmc.org/resources/clearlagg.68271/]ClearLagg[/url]
+一款 Sponge 插件
+[url=https://ore.spongepowered.org/TimeTheCat/CatClearLag]CatClearLag[/url] 这个 Cat 和 Catserver 无关，请不要误会。
+
+[b]请 MOD/插件/服务端作者帮你解决优化问题[/b]
+
+如果你使用 Spark 观察到有某个 MOD/某个插件/某个服务端占用的百分比过高
+拿上这份 Spark 报告去找作者反馈，只要你反馈的这个 MOD/插件/服务端仍然在更新，
+那么他们的作者多数情况下会相信你的这份反馈，并采取他们觉得有效的方式进行优化改进。
+我举一个我自己的例子：
+[url=https://github.com/Alex-the-666/Ice_and_Fire/issues/2140]https://github.com/Alex-the-666/Ice_and_Fire/issues/2140[/url]
+总而言之，优化问题也是可以解决，并且一定能够解决的。
+认为高版本优化差就不更新的理由，也是不攻自破的。
+
+综上所述，你已经没有什么好的理由来拒绝新版本了。
+
+[b]赶快更新吧。[/b]
+
+[hr]
+[size=4][b]第三个问题：消除对 MOD 服的感性偏见[/b][/size]
+
+这方面我不想多说什么，因为这个问题主观性很强，我也发表一下我的个人观点
+MOD 服，绝对不应该简单地与骗氪划等号。
+首先，任何服务器，只要服主想骗氪，都可以骗氪。
+[i]纯净服也可以骗氪[/i]。
+首先要纠正一个误解：你以为纯净服就是“绝对地”纯净？
+你要找那种服务器的话，请购买正版，然后去玩领域服。
+凡是支持离线（“盗版”）登录的服务器都不可能是绝对纯净、不加插件、MOD 的——你起码要装一个登录插件。
+有一种情形例外：白名单服务器。
+只要加了插件，骗氪之类的事情就好办了。
+但是 [b]骗氪不是插件的原罪，更不是非纯净服务器的原罪[/b]
+[quote]枪械无罪，有罪的是扣动扳机的人。[/quote]
+这句话可能出自 AK-47 的发明者卡拉什尼科夫，送给各位。
+
+[hr]
+[size=4][b]总结[/b][/size]
+
+在本文的最后，我想说的是：
+
+MOD 服作为一种 Minecraft 的玩法，与纯净、插件对比，
+三者并无高下优劣之分，而是各有千秋，完全平等的；
+不能说插件就比 MOD 好，纯净就比 MOD 好，反过来也是一样的。
+
+如果你读完这篇文章仍然对 MOD 服有负面的看法，请再读一遍，或者回复在下面告诉我。
+
+我相信，Minecraft 的明天是光明的：它将作为一个“游戏引擎”而继续存在，继续接纳来自玩家社区的新鲜内容，
+在“内容为王”的游戏争霸战场上继续取得胜利。
+
+我相信，Minecraft MOD 以及 MOD 服的明天是光明的：它将借助 Minecraft 这一“游戏引擎”，
+以玩家社区庞大数量的玩家无穷无尽的想象力、开发社区优秀程序员们的战斗力为依托，
+继续为整个 Minecraft 社区作出不可估量的贡献。
+
+我相信，阅读文章到这里的你，你的前途也是光明的：
+因为你善于接纳新的思想，不仅有实事求是的态度，而且有求取真知的精神，
+你不但能在开设 MC 服务器这一件事上做好，而且，你的这些优秀的品质，将伴随你今后的人生，使你取得成功。
+感谢各位！
