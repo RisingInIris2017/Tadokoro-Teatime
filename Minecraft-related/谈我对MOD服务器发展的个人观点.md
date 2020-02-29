@@ -205,9 +205,9 @@ Minecraft 这款游戏是在不断进步的，而且进步很快。
 
 #### 插件
 
-这是大家都很喜欢的 [老牌管理插件 Essential，或者简称 Ess 的更新履历。](https://github.com/EssentialsX/Essentials/commits/)。
+这是大家都很喜欢的 [老牌管理插件 Essential，或者简称 Ess 的更新履历](https://github.com/EssentialsX/Essentials/commits/)。
 
-这是大家经常在用的 [新时代权限组插件 LuckPerm，或者简称 LP 权限组的更新履历。](https://github.com/lucko/LuckPerms/commits/)。
+这是大家经常在用的 [新时代权限组插件 LuckPerm，或者简称 LP 权限组的更新履历](https://github.com/lucko/LuckPerms/commits/)。
 
 我选取这两位重量级选手，一个代表了 Spigot 社区，另一个代表了 Sponge 社区。
 
