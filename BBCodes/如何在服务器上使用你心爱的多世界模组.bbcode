@@ -1,0 +1,127 @@
+[size=5][b]如何在服务器上使用你心爱的多世界模组[/b][/size]
+
+[size=4][b]前言[/b][/size]
+
+[size=3]有不少 MOD 服服主喜欢使用地形生成模组，例如广受大家喜爱的 [url=https://www.mcbbs.net/thread-817372-1-1.html][BOP] 超多生物群系[/url]， [url=https://www.mcbbs.net/thread-681294-1-1.html][RTG] 真实地形生成[/url]，OTG[/size]
+
+[size=3]甚至冷门一些的，适用于 1.7.10 的 [url=https://www.curseforge.com/minecraft/mc-mods/highlands]高地[/url]。[/size]
+
+[size=3]总而言之，这些有趣的模组极大地改造了 Minecraft 世界的地形地貌，为玩家的生存世界带来了别致的风景。[/size]
+
+[size=3]然而在服务器上使用时，服主们常常遇到以下四个问题：[/size]
+
+[size=3][list=1]
+[*][size=3]我要怎样使用某某 MOD 生成主世界？[/size]
+[*][size=3]在安装了多世界插件，例如 MV 的情况下，如何使用某某 MOD 生成新的世界？[/size]
+[*][size=3]已有旧的地图情况下，可以加地形 MOD 吗？有用吗？[/size]
+[*][size=3]当我不想要地形 MOD 了，该怎么处理？[/size][/list][/size]
+[size=3]本文将一一解答以上的问题，帮助你开起拥有美丽世界的 MOD 服。[/size]
+
+[size=4][b]如何使用某某 MOD 生成主世界[/b][/size]
+
+[size=3]启用 MOD 的地形生成器的关键，就在于这些 MOD 的地形生成器名称。[/size]
+
+[size=3]BOP 超多生物群系:[font=Monaco,Consolas,'Lucida Console','Courier New',serif][backcolor=#ebddc0]BIOMESOP[/backcolor][/font][/size]
+
+[size=3]RTG 真实地形生成：[font=Monaco,Consolas,'Lucida Console','Courier New',serif][backcolor=#ebddc0]RTG[/backcolor][/font][/size]
+
+[size=3]知道了地形生成器的名称，我们只需打开 [font=Monaco,Consolas,'Lucida Console','Courier New',serif][backcolor=#ebddc0]server.properties[/backcolor][/font] 文件，[/size]
+
+[size=3]找到[/size]
+
+[size=3][font=Monaco,Consolas,'Lucida Console','Courier New',serif][backcolor=#ebddc0]generator-settings=[/backcolor][/font][/size]
+
+[size=3]在等号后面填入地形生成器的名称，保存，重启服务器就可以了。[/size]
+
+[size=4][b]如何使用某某 MOD 生成多世界插件的世界[/b][/size]
+
+[size=20px][b]准备工具[/b][/size]
+
+[size=3]这里涉及到使用 NBTExplorer 修改 level.dat 的内容，[/size]
+
+[size=3]因此我们首先给出 NBTExplorer 工具的下载地址：[url=https://github.com/jaquadro/NBTExplorer/releases/latest]https://github.com/jaquadro/NBTExplorer/releases/latest[/url][/size]
+
+[size=3]msi 格式是安装包，zip 格式是免安装的，解压就可以使用，推荐下载后者。[/size]
+
+[size=20px][b]操作步骤[/b][/size]
+
+[size=3]我们以 Multiverse-Core 插件（MV 多世界）为例，介绍生成 MOD 世界的方法。[/size]
+
+[size=3][list=1]
+[*]在服务器使用命令[/list][/size]
+[size=3][font=Monaco,Consolas,'Lucida Console','Courier New',serif][backcolor=#ebddc0]/mv create <世界名> normal[/backcolor][/font][/size]
+
+[size=3]生成一个世界，生成完毕之后，立即关闭服务器，或使用。[/size]
+
+[size=3][font=Monaco,Consolas,'Lucida Console','Courier New',serif][backcolor=#ebddc0]/mv unload <世界名>[/backcolor][/font][/size]
+
+[size=3]将世界卸载，备用。[/size]
+
+[size=3][list=1]
+[*]将生成好的世界文件夹打开，默认位于 [font=Monaco,Consolas,'Lucida Console','Courier New',serif][backcolor=#ebddc0]服务端根目录/world/<世界名>文件夹[/backcolor][/font] 下。[/list][/size]
+[size=3]删除 [font=Monaco,Consolas,'Lucida Console','Courier New',serif][backcolor=#ebddc0]region[/backcolor][/font] 文件夹，并找到 level.dat 文件。[/size]
+
+[size=3]3.双击“灌木”图标的 NBTExplorer.exe 运行，将 level.dat 文件拖入已经打开的 NBTExplorer 窗口中。[/size]
+
+[size=3]打开之后是这样。 [img]https://s2.ax1x.com/2020/03/06/3LtWCR.png[/img][/size]
+
+[size=3]点击 Data 左边的小按钮，展开 Data 目录。[/size]
+
+[size=3]向下滚动鼠标滚轮，找到红圈圈住的 [font=Monaco,Consolas,'Lucida Console','Courier New',serif][backcolor=#ebddc0]generatorName[/backcolor][/font] 项，双击打开。[/size]
+
+[size=3]在跳出的文本框中输入世界生成器名称，例如 [font=Monaco,Consolas,'Lucida Console','Courier New',serif][backcolor=#ebddc0]RTG[/backcolor][/font]。[/size]
+
+[size=3]填好后点击“OK”按钮，并按 Ctrl+S 快捷键保存更改。[/size]
+
+[size=3]更改完后是这样。 [img]https://s2.ax1x.com/2020/03/06/3Lt259.png[/img][/size]
+
+[size=3][list=1]
+[*]启动服务器，或使用[/list][/size]
+[size=3][font=Monaco,Consolas,'Lucida Console','Courier New',serif][backcolor=#ebddc0]/mv load <世界名>[/backcolor][/font][/size]
+
+[size=3]载入世界，现在新生成的区块都会使用 RTG 提供的地形生成器来加载了，[/size]
+
+[size=3]你可以看到高大的树木、起伏的山岭，我们就成功了。[/size]
+
+[size=4][b]已有旧的地图情况下如何使用地形 MOD[/b][/size]
+
+[size=3]道理是一样的。[/size]
+
+[size=3]如果你需要更改主世界的地形生成，将主世界的 level.dat 按照上面的步骤修改即可。[/size]
+
+[size=3]MV 多世界同理。[/size]
+
+[size=4][b]不想要地形 MOD 了该怎么处理[/b][/size]
+
+[size=3]你可能会在加了以后反悔不想要了，或者希望换一款地形生成 MOD。[/size]
+
+[size=3]在这种情况下你[b]必须事先备份存档！否则可能会带来严重的存档损失！[/b][/size]
+
+[size=3]备份好存档之后，按照上文所述的方法，找到你想删掉地形生成的那个世界，[/size]
+
+[size=3]可能是主世界，也可能是 MV 多世界，打开它的 level.dat 文件。[/size]
+
+[size=3]仍然找到 [font=Monaco,Consolas,'Lucida Console','Courier New',serif][backcolor=#ebddc0]generatorName[/backcolor][/font] 项，双击打开，在跳出的文本框中[b]将里面的字删空[/b]，[/size]
+
+[size=3]点击“OK”，按 Ctrl+S 保存，然后重启服务器或重载多世界即可。[/size]
+
+[size=3]至于 MOD 本身的去留由你自己决定；[/size]
+
+[size=3]如果你安装的是 RTG，你完全可以放心地[b]在将所有使用 RTG 生成的世界做上述处理之后[/b]，将 RTG MOD 删掉。[/size]
+
+[size=4][b]结语[/b][/size]
+
+[size=3]总而言之，在服务器上使用地形生成器模组是很简单的事情。[/size]
+
+[size=3]你甚至可以试试看，找一个添加多世界的模组（例如[url=https://www.mcbbs.net/thread-804242-1-1.html]交错次元[/url]、[url=https://www.mcbbs.net/thread-797818-1-1.html]天境[/url]等），[/size]
+
+[size=3]将它的地形生成器名称拿过来，套在主世界、MV 多世界上试试效果，不过这种行为带有恶作剧性质。[/size]
+
+[size=4][b]补充[/b][/size]
+
+[size=3]少数地形生成 MOD 不仅有对生成器名称的要求，还有对地图名称 [font=Monaco,Consolas,'Lucida Console','Courier New',serif][backcolor=#ebddc0]level-name[/backcolor][/font] 的要求，[/size]
+
+[size=3]例如另一款著名的高版本地形生成 MOD —— OTG 及其附属。[/size]
+
+[size=3]这些 MOD 在使用时应当参考作者的指示来设置。[/size]
+
