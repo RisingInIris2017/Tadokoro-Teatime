@@ -46,3 +46,7 @@ ___________
 这里是田所的下午茶时间。
 
 进来吧，请。
+## 友情链接
+Kurisu93's Blog: http://blog.maryt.world/
+
+KEVIN的自留地: https://necker14.github.io/
