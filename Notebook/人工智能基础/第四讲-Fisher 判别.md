@@ -7,6 +7,7 @@
 ![GSaUZ6.png](https://s1.ax1x.com/2020/03/26/GSaUZ6.png)
 ![GSatqx.png](https://s1.ax1x.com/2020/03/26/GSatqx.png)
 ![GSdqcd.png](https://s1.ax1x.com/2020/03/26/GSdqcd.png)
+
 **上图中 m 上方的符号应该是箭头，表示 m 是一个向量。**
 
 **不是波浪线`~`。**
