@@ -1,0 +1,6 @@
+# 第四讲-无线大数据
+## 
+### 值函数 Value-function
+预测在状态 s下采取动作 a 会得到的奖赏 r。
+![8zQIUI.png](https://s1.ax1x.com/2020/03/26/8zQIUI.png)
+![8zQ7PP.png](https://s1.ax1x.com/2020/03/26/8zQ7PP.png)
