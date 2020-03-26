@@ -1,4 +1,4 @@
-# 第四讲
+# 第四讲-Fisher 判别
 ## Fisher 线性判别
 ### Fisher 的目的
 ![GSaadK.png](https://s1.ax1x.com/2020/03/26/GSaadK.png)
