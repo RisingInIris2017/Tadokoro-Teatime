@@ -35,3 +35,5 @@
 取 (abs(w))^2/2 最大，使得 **y·(transform(w)\*x+b)>&beta;**
 
 以上两式中 &beta;=&epsilon;^2
+
+![GQScn0.png](https://s1.ax1x.com/2020/03/31/GQScn0.png)
