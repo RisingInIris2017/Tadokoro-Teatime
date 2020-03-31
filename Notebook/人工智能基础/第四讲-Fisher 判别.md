@@ -18,3 +18,10 @@
 ### Fisher 总结
 ![GSc8AA.png](https://s1.ax1x.com/2020/03/26/GSc8AA.png)
 ![GScl0H.png](https://s1.ax1x.com/2020/03/26/GScl0H.png)
+
+## 支持向量机
+点到超平面的距离
+
+`(transform(w) * x1 + b)/abs(w)`
+
+式中 transform() 是转置函数，x1 是标量.
