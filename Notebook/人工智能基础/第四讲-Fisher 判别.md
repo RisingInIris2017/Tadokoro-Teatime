@@ -25,3 +25,13 @@
 `(transform(w) * x1 + b)/abs(w)`
 
 式中 transform() 是转置函数，x1 是标量.
+
+### 支持向量机的最优化目标
+
+取 2&epsilon;/abs(w) 最大，使得 `y·(transform(w)*x+b)>&beta;`
+
+变形，得
+
+取 (abs(w))^2/2 最大，使得 `y·(transform(w)*x+b)>&beta;`
+
+以上两式中 &beta;=&epsilon;^2
