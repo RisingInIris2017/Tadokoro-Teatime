@@ -18,22 +18,3 @@
 ### Fisher 总结
 ![GSc8AA.png](https://s1.ax1x.com/2020/03/26/GSc8AA.png)
 ![GScl0H.png](https://s1.ax1x.com/2020/03/26/GScl0H.png)
-
-## 支持向量机
-点到超平面的距离
-
-`(transform(w) * x1 + b)/abs(w)`
-
-式中 transform() 是转置函数，x1 是标量.
-
-### 支持向量机的最优化目标
-
-取 2&epsilon;/abs(w) 最大，使得 **y·(transform(w)\*x+b)>&beta;**
-
-变形，得
-
-取 (abs(w))^2/2 最大，使得 **y·(transform(w)\*x+b)>&beta;**
-
-以上两式中 &beta;=&epsilon;^2
-
-![GQScn0.png](https://s1.ax1x.com/2020/03/31/GQScn0.png)
