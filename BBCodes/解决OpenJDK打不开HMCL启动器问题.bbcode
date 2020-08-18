@@ -1,0 +1,59 @@
+[align=center]如题，这篇教程就是为了解决这个问题而来。[/align]
+
+[size=4][b]前言[/b][/size]
+很多大佬，可能是因为看了这篇帖子的原因：
+使用Openj9大幅降低MC的内存占用，提高FPS和TPS，炸鸡也能玩1.12的mod了
+https://www.mcbbs.net/thread-847020-1-1.html
+(出处: Minecraft(我的世界)中文论坛)
+
+或者是听信别人的坑蒙拐骗，或者别的什么原因，卸载了陪伴自己多年 MC 生涯的 JRE，
+走上了 OpenJDK 这条歪门邪道。
+
+真的，它真的能降低内存占用，在高版本 MC 的情况下尤其明显——
+但是，由于 OpenJDK 没有内置 JavaFX，依赖于 JavaFX 的新版本的 HMCL 启动器就无法使用了。
+
+有的大佬可能会说，哎呀，启动器那么多，我换一个不就行了。
+可是如果你像我一样舍不得陪伴了自己多年 MC 生涯的 HMCL 启动器，
+那么你可以按照我接下来要讲的步骤，抢救一下！
+
+[s]唉，还不是情怀惹的祸吗.jpg[/s]
+
+[size=4][b]操作步骤[/b][/size]
+以下仅提供 Windows 系统的安装步骤。
+1. 通过这里下载 JavaFX链接: https://pan.baidu.com/s/1Qyo-vo9z2hhxSBgkUkL7tQ 提取码: 35b2
+2. 解压下载得到的 ZIP 文件，可以看到它分为三个文件夹：
+[code]lib
+bin
+rt
+[/code]
+3. 找到你的 OpenJDK 安装位置。
+如果你是使用 .msi 或者 .exe 格式的安装包安装的，不必去翻找文件，
+只需按下 Windows 徽标键 + R 键打开“运行”窗口，输入
+[code]%JAVA_HOME%[/code]
+回车，就是我们要找的位置了。
+4. 在这个目录下同样有 lib, bin 文件夹，还有一个 jre 文件夹。
+5. 将第二步解压得到的三个文件夹：
+lib 中的[b]内容[/b]放入 OpenJDK 安装目录下的 lib 文件夹中；
+bin 中的[b]内容[/b]放入 OpenJDK 安装目录下的 bin 文件夹中；
+rt 文件夹打开，里面又有 lib, bin 两个文件夹；
+rt/lib 中的[b]内容[/b]放入 OpenJDK 安装目录下，jre 文件夹内的 lib 文件夹中；
+rt/bin 中的[b]内容[/b]放入 OpenJDK 安装目录下，jre 文件夹内的 bin 文件夹中。
+6. 至此完成 JavaFX 的安装。
+
+概括成四个字就是：
+[size=3]缺啥补啥。[/size]
+OpenJDK 没有 JavaFX，我们给它装一个就行了。
+
+[size=4][b]常见问题[/b][/size]
+1. 装了以后还是不能使用 HMCL 怎么办？
+一般情况下装错了也没关系，如果你觉得心里别扭，可以重装 OpenJDK。
+2. 你这个 JavaFX 哪里来的？
+这里来的 ↓
+https://github.com/scoop-software/openjfx-win/releases/tag/openjfx-v8u202-b02
+3. 你凭什么搬运人家的文件？授权呢？
+授权 ↓
+https://github.com/scoop-software/openjfx-win/blob/master/LICENSE
+原文件依据 Apache License 2.0 开源，允许自由分发。
+考虑到大家上 GitHub 和下载上面的文件有些困难，我才搬运的。
+有兴趣可以去 GitHub 下载，顺手给这个仓库点一个 Star。
+
