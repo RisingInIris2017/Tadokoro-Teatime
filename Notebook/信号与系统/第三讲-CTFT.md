@@ -26,5 +26,9 @@ x(t) 的傅里叶变换为 X(j&omega;)，求 X(j&omega;) 的实部 Re{X(j&omega;
 解：若直接变换太繁。题给信号是一个实信号，遇到求实部、虚部，要想到运用**奇偶分解**来做。
 
 > 这里的内容需要查阅信号与系统课本或者 PPT 补上。
-## 对偶性的推导
+## 时域-频域对偶性的推导
 [![BvNDDx.png](https://s3.ax1x.com/2020/11/11/BvNDDx.png)](https://imgchr.com/i/BvNDDx)
+
+按步骤即可推导出对偶性，本质上还是傅里叶变换的定义式。
+
+第三步是将 j&omega; 换成 t，t 换成 j&omega;。
