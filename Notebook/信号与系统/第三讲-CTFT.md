@@ -14,3 +14,17 @@ Sa(x)=sin(x)/x=sinc(x/&pi;)
 取 &omega; = 0，则计算出函数的直流增益，等于左边时域函数 x(t) 从负无穷到正无穷对 t 积分，即为所求积分。
 
 X(j0) 等于 1，故所求积分值为 1，Q.E.D.
+## 时域频域的对称特性
+时域实偶，频域实偶；
+
+时域实奇，频域虚奇。
+## 插播一道考研真题
+x(t) 的傅里叶变换为 X(j&omega;)，求 X(j&omega;) 的实部 Re{X(j&omega;)}。
+
+[![BvtMm6.png](https://s3.ax1x.com/2020/11/11/BvtMm6.png)](https://imgchr.com/i/BvtMm6)
+
+解：若直接变换太繁。题给信号是一个实信号，遇到求实部、虚部，要想到运用**奇偶分解**来做。
+
+> 这里的内容需要查阅信号与系统课本或者 PPT 补上。
+## 对偶性的推导
+[![BvNDDx.png](https://s3.ax1x.com/2020/11/11/BvNDDx.png)](https://imgchr.com/i/BvNDDx)
