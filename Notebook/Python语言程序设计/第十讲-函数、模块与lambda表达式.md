@@ -1,4 +1,4 @@
-# 第十讲-函数与模块
+# 第十讲-函数、模块与lambda表达式
 ## 定义一个普通函数
 ```python
 def 函数名([形参1, 形参2, ... , 形参n]):
@@ -71,3 +71,24 @@ ValueError: too many values to unpack (expected 2)
 x= 2 y= (3, 4, 5)
 ```
 但是**在函数形参表当中，只有最后一个形参**可以加`*`变为变长参数，不能像上面 `x, *y, z` 那样使用。
+## lambda 表达式
+lambda 表达式以
+```python
+标识符 = lambda 形参表: 表达式
+```
+的形式构成。
+
+上述赋值语句的右值即为 lambda 表达式，作为“匿名函数”，可以不命名。
+
+但为了调用方便起见，将其赋值给一个标识符，之后就可以以
+
+```python
+标识符(形参表)
+```
+的形式调用表达式。
+
+```python
+x,y=eval(input('输入点的坐标'))
+distance=lambda x,y:x**2+y**2
+print('点到原点的距离=√',distance(x,y),sep='')
+```
