@@ -119,3 +119,45 @@ print('点到原点的距离=',distance[1](x,y),sep='') # 调用了索引为 1 �
 点到原点的距离=√25
 点到原点的距离=5.0
 ```
+## 函数的递归
+调用自身的函数就构成直接递归。
+
+调用别的函数，那个函数再调用本函数，就构成间接递归。
+
+递归例程：
+```python
+def f(n):
+    if n<=1:
+        return 1
+    else:
+        return n*f(n-1)
+print(f(3))
+```
+输出 6。
+
+if 语句中的 n<=1 就是递归出口条件，下面的选择支没有出现 f 函数的调用，可以使递归停止。
+## 全局变量
+函数外定义的变量就是全局变量。
+
+如果函数体中，如果要对全局变量重新赋值，可以使用 global 关键字。
+
+```python
+>>> GlobalVar = 3
+>>> def f(n):
+	GlobalVar = n	
+>>> f(100)
+>>> GlobalVar
+3
+
+# 这里可以发现，函数体不能修改全局变量。
+
+>>> def f(n):
+	global GlobalVar # 在此声明全局变量，表明这里的 GlobalVar 就是函数体外的那个全局变量 GlobalVar
+	GlobalVar = n
+	
+>>> f(100)
+>>> GlobalVar
+100
+
+# 这里可以看到全局变量 GlobalVar 被改变。
+```
