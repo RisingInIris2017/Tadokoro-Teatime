@@ -92,3 +92,30 @@ x,y=eval(input('输入点的坐标'))
 distance=lambda x,y:x**2+y**2
 print('点到原点的距离=√',distance(x,y),sep='')
 ```
+### 给参数设置默认值
+lambda 表达式也可以在声明时对形参赋值。
+
+这样，当缺省形参时，就代入所赋值的默认值。
+
+lambda 表达式可以使用变长形参：
+```python
+>>> f=lambda x,*y:print(x,y)
+>>> f(2,3,4,5,6)
+2 (3, 4, 5, 6)
+```
+老师上课讲错了。
+
+## lambda 表达式可以作为列表、元组的分量
+例程如下：
+```python
+import math
+x,y=eval(input('输入点的坐标'))
+distance=[lambda x,y:x**2+y**2, lambda x,y:math.sqrt(x**2+y**2)]
+print('点到原点的距离=√',distance[0](x,y),sep='') # 调用了索引为 0 的表达式
+print('点到原点的距离=',distance[1](x,y),sep='') # 调用了索引为 1 的表达式
+
+# 输出如下
+输入点的坐标3,4
+点到原点的距离=√25
+点到原点的距离=5.0
+```
