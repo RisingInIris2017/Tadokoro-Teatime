@@ -3,10 +3,12 @@
 ### 字符串反序
 对于需要反序的字符串 `string`, `string[::-1]` 就能实现反序，写成 `string[-1:0:-1]` 反而是错的。
 ## 编程实例与经验总结
+### 字符串与文件操作部分
+#### 
 ```python
 wordList = input('Enter a sentence:').split()
-# 可以这样写，在这里 input 函数的返回值字符串直接调用了split()方法
 ```
+可以这样写，在这里 input 函数的返回值字符串直接调用了split()方法
 ```python
 def cheer(teamName):
     print('''How do you spell winner?
@@ -14,8 +16,8 @@ def cheer(teamName):
     {}!
     And that\'s how you spell winner!
     Go {}!'''.format(' '.join(teamName.upper()),teamName))
-    # join()方法：以调用此方法的字符串作为连接符，连接作为其参数的字符串中的各个字符
 ```
+join()方法：以调用此方法的字符串作为连接符，连接作为其参数的字符串中的各个字符
 ```python
 def fcopy(inputFileName,outputFileName):
     inputFile = open(inputFileName,'r')
@@ -28,9 +30,11 @@ def fcopy(inputFileName,outputFileName):
     # flush()方法的正确使用方法是？
     outputFile.flush()
     outputFile.seek(0)
-    # flush() 刷新后，文件指针指向文件尾部，因此再 read() 读不到内容。
-    # 必须 seek(0) 将文件指针指向文件头部，再 read() 才能读到内容。
+    print(outputFile.read())
 ```
+flush() 刷新后，文件指针指向文件尾部，因此再 read() 读不到内容。
+
+必须 seek(0) 将文件指针指向文件头部，再 read() 才能读到内容。
 ## pyinstaller 笔记
 如果要打包一个包含控制台交互的程序，比如带有 input() 的程序，
 
