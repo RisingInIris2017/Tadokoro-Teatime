@@ -73,7 +73,7 @@ ________________________
 #### “我的文档”
 这一段的标题“我的文档”其实是众多系统预设文件夹的代表。
 
-[![6pesfS.jpg](https://s3.ax1x.com/2021/02/27/6pesfS.jpg)](https://imgtu.com/i/6pesfS)
+![6pesfS.jpg](https://z3.ax1x.com/2021/02/27/6pesfS.jpg)
 
 看看这些文件夹吧。你或许会说：我从来不往这里面放东西！
 
