@@ -1,4 +1,5 @@
 # Tadokoro-Teatime
+
 Archive of bullshits of mine. - 本仓库用于存放田所的瞎比比。
 ________
 
@@ -46,7 +47,9 @@ ___________
 这里是田所的下午茶时间。
 
 进来吧，请。
-## 友情链接
-Kurisu93's Blog: http://blog.maryt.world/
 
-KEVIN的自留地: https://necker14.github.io/
+## 友情链接
+
+北宇治高校未来道具研究所: https://df.mar.yt/
+
+KEVIN 的自留地: https://necker14.github.io/
