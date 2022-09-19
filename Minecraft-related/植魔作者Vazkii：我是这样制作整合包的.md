@@ -206,43 +206,40 @@ InControl 允许你设置自定义的规则，来控制什么情况下生物可�
 > *Crucial 2* 使用这个方法在可选的 Create 机械动力 MOD 兼容部分添加了“粗铜”材料物品。
 > 
 
-### Advanced Scripting
+### 高级脚本
 
-*KubeJS* and *CraftTweaker* both support advanced scripting, using an event system to change things that happen in the game based on custom code. This effectively has the same scope of possible changes as a server-side mod, but comes with the complexity of having to understand their coding languages and APIs, so it’s generally not used other than to bridge niche gaps that otherwise couldn’t be done with available tweak mods.
+KubeJS 和 CraftTweaker 都支持高级的脚本编程，利用其事件系统，你可以编写自定义的代码来控制游戏中发生的事情。它们能修改的游戏内容范围，基本相当于一个服务端 MOD，但相应地，你必须理解它们复杂的编程语言与 API；所以，通常只用它们来完成其他可用的魔改 MOD 无法填补的、游戏内容中细节的缺失环节。
 
-> Neither *Bliss* nor *Crucial 2* use this feature, but the original *Crucial* used [this script](https://github.com/Vazkii/Crucial/blob/master/scripts/ore_correction.zs) to replace every ore block drop with the raw item equivalent.
+> Bliss 和 Crucial 2 都没有使用这个功能，但 Crucial 最初曾经使用过 [这个脚本](https://github.com/Vazkii/Crucial/blob/master/scripts/ore_correction.zs) 将矿物的掉落物用相应的粗矿替换。
+
+### 修改世界生成
+
+目前，数据包已经能够极大程度地修改世界生成的方式。有些 MOD，比如 Terralith，实际上整个 MOD 就是一个伪装成 MOD 的复杂数据包。你可能不太愿意为自己的整合包写一个庞大的世界生成数据包，但是你可以用它们对世界生成做小的修改，比如那些无法简单地通过修改配置文件完成的。
+
+> Crucial 2 使用了一个自定义数据包将湖泊从生物群系中删除，并使得山更高、河流更深。Bliss 使用了一个自定义数据包来删除某些 MOD 添加的某些我不想生成的自然生成结构，比如 Paraglider 滑翔伞 MOD 的祭坛。
 > 
 
-### Worldgen Changes
+### 方块替换
 
-As of recently, data packs are able to vastly modify the way the world generates. Entire mods such as *Terralith* are actually just complex data packs in disguise. You’re unlikely to be making a massive worldgen data pack for your modpack, but you can use them to make small tweaks to worldgen that otherwise wouldn’t be possible via simple config editing.
+Block Swap MOD 让你在任何情况下，都可以把任何一种方块替换成指定的另一种。这主要和世界生成相关，但也可以用来做一些刁钻的操作，比如阻止特定的方块生成在世界中。
 
-> *Crucial 2* uses a custom data pack to remove lakes from biomes, make mountains taller, and rivers deeper. *Bliss* uses a custom data pack to remove select structures from mods I don’t wish to have spawning, such as the shrines from *Paraglider*.
-> 
+> *Crucial 2* 利用这个功能将 Mirabilis MOD 生成的 Leaf Pile（译者注：未查到此方块的汉化名称，暂以“落叶堆”代替）方块，用 Quark 夸克 MOD 中相应的树叶地毯方块替换，从而规避了游戏内容的重复。
 
-### Block Swap
+### 默认选项
 
-The *Block Swap* mod allows you to replace any block with another, in any situation. This is mainly very relevant for worldgen, but can be used to do other weird tricks, such as preventing specific blocks from existing in the world.
+Default Options MOD 让你可以给玩家预设一套自定义的选项配置，玩家启动游戏时就会自动设置上。这可以用于按照你的偏好调整游戏设置，而且关键的是它可以确保玩家启动游戏时不会遇到一大堆不合理的快捷键绑定。
 
-> *Crucial 2* uses this to swap the worldgenned Leaf Pile blocks from the *Mirabilis* mod with the respective Leaf Carpet blocks from *Quark*, in order to ensure a lack of content overlap.
-> 
+> *Crucial 2* 和 *Bliss* 都使用了这个功能来预设一套干净的快捷键绑定，并将自动跳跃功能关闭了。此外，*Bliss* 还通过这个打开了一些辅助功能选项。
 
-### Default Options
+### 还有很多...
 
-The *Default Options* mod lets you ship out a custom options config that players will start the game with. This can be used to set game settings to your preference and is essential to ensure players don’t start their game with a pile of mismatched keybinds.
+这个列表不能穷尽的部分还有很多；它仅仅包含了我曾经用来保证我的每一个整合包具有恰当、连贯的游戏体验的那一小部分魔改工具。还有非常多的魔改 MOD，是我尚未了解过的；而其中可能有相当一部分，正好是你所需要的。
 
-> Both *Crucial 2* and *Bliss* use this to ship a clean keybind sheet as well as Auto Jump disabled. Additionally, *Bliss* ships with several accessibility options enabled.
-> 
+这一部分主要展示了我以前用过、效果很好，而且你也能获取和使用的那些工具。如果你觉得你要魔改整合包里的一个内容，但找不到一个能起到这个功能的 MOD，不妨四处打听、到处找找，或许它已经恭候你多时了。
 
-### And Much, Much More
+# 🏗️ 开发
 
-This list is very much non-exhaustive, and shows only some of the tools I’ve used to ensure every pack feels like a proper, cohesive experience. There are a myriad of pack dev mods I haven’t even touched, many of which may be exactly what you need. 
-
-This section serves mainly as a demonstration of the tools you have access to, and the ones I’ve used to good effect in the past. If you feel you need to make a change to the pack and don’t know of any mods that let you do it, ask around, maybe one already exists.
-
-# 🏗️ Development
-
-This is the fun part.
+这就是有意思的部分了。
 
 Now that we have our base and our tools ready, it’s time to put them to work. There are two types of tasks you’ll have to tackle in this stage: **Issue**, and **Vision**.
 
