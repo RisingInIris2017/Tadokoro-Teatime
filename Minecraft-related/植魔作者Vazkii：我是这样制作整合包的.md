@@ -332,52 +332,54 @@ Default Options MOD 让你可以给玩家预设一套自定义的选项配置，
 
 我喜欢用一种我叫做“后向传播”的方法来设计内容探索流程。它本质上就是，假设玩家脑海中已经有一个目标或想法，然后从目标出发，倒推玩家实现想法、达成目标所需的探索步骤。
 
-My personal favorite example of a game that implements *Backpropagation* is *RuneScape*, be it the modern version, or the oldschool one. Here’s an example of a player thinking “*I wish I could move around the world better”.* Click on the arrows on the left to backpropagate.
+我个人最喜欢用来举例的，实践了“后向传播”设计方法的游戏就是 *RuneScape*，包括它的现代版本和经典版本。这里有一个例子：如果玩家产生“*我希望能够在世界中移动得舒服一点*”的想法。点击左边的箭头来体会一下“后向传播”的过程。
 
-- “I wish I could move around the world better”
-    - “Let’s look up what methods for transport exist”
-        - “Fairy Rings can go to a lot of places, what do I need to clear to get those?”
-            - “[Fairy Tale Part 1](https://oldschool.runescape.wiki/w/Fairytale_I_-_Growing_Pains)” Quest
+（译者注：作者发布此博文的原始网页上，下方的这段文字每一级的左边都有一个箭头，可以逐级点击展开的。）
+
+- “我希望能够在世界中移动得舒服一点”
+    - “我们找找有没有传送的方法”
+        - “Fairy Rings（译者注：RuneScape 游戏中的一种道具，[中文维基百科](https://zh.wikipedia.org/zh-sg/RuneScape#%E6%8E%A2%E7%B4%A2) 上给出的中文译名为“仙女环”） 可以用来传送去很多地方，我要做哪些任务来得到它们？”
+            - “[Fairy Tale Part 1](https://oldschool.runescape.wiki/w/Fairytale_I_-_Growing_Pains)” 任务
                 
-                This quest has multiple requirements…
+                它具有如下的前置任务：
                 
-                - “Lost City” Quest
-                    - Level 31 Crafting
-                    - Level 36 Woodcutting
-                - “Nature Spirit” Quest
-                    - “The Restless Ghost” Quest
-                    - “Priest in Peril” Quest
+                - “Lost City” 任务
+                    - “工艺”技能达到 31 级
+                    - “伐木”技能达到 36 级
+                - “Nature Spirit” 任务
+                    - “The Restless Ghost” 任务
+                    - “Priest in Peril” 任务
 
-Once you’ve fully expanded the arrows, you can see we went from a vague “How do I get around” question to a list of actionable points we can work on to get to the end goal. We went from the end to the start, and without the game telling us where to start.
+完全展开这些箭头后，你会看到我们是如何从一个模糊的问题“我们怎么移动得方便一些”出发，获得一张包含“为了达到最终目标，我们要去做的事情”的操作要点清单的。我们从结果倒推到出发点，而并不需要游戏告诉我们出发点在哪儿。
 
-In fact, at this point we can backpropagate non-linearly. For example, let’s say you don’t want to level up your Crafting level - you can look for some quests that can give you crafting EXP.
+事实上，我们可以利用”后向传播“来设计非线性的游戏流程。例如，假设你不愿意直接升级”工艺“技能的等级，你也可以找那些奖励”工艺“技能经验值的任务来做。
 
-- 30 Crafting
+- 30 级”工艺“技能
     
-    By clicking on the Crafting skill on the wiki, we can see [quests that reward crafting EXP](https://oldschool.runescape.wiki/w/Crafting#Quests_rewarding_Crafting_experience).
+    从 RuneScape 的百科上我们可以查到 [奖励”工艺“技能经验值的任务](https://oldschool.runescape.wiki/w/Crafting#Quests_rewarding_Crafting_experience).
     
-    - “Tower of Life” Quest
-        - Level 10 Construction
-    - “The Golem” Quest
-        - Level 25 Thieving
-    - “Sheep Shearer” Quest
-    - “Goblin Diplomacy” Quest
-    - etc…
+    - “Tower of Life”任务
+        - ”建筑“技能达到 10 级
+    - “The Golem”任务
+        - ”偷窃“技能达到 25 级
+    - “Sheep Shearer”任务
+    - “Goblin Diplomacy”任务
+    - 其他
 
-If you’ve expanded the “The Golem” Quest, you can see that you now need to level up Thieving. A player can then opt to level up Thieving via doing basic pickpocketing on NPCs or doing more quests, which would lead to another backpropagation.
+如果你展开了“The Golem”任务线，你就会发现你需要升级”偷窃“技能。那么玩家就可以选择通过偷窃 NPC 或者做其他任务来升级”偷窃“技能，这就是另外一条”后向传播“设计线路了。
 
-The freedom this type of progression gives players is unparalleled - and as a consequence, allowing players to chart their own path and make their own goals leads to them feeling much more connected and satisfied while accomplishing them. It’s not what the game told you to do, it’s what *you* told yourself to do. That’s powerful, and in such an open game like *Minecraft* can be an essential tool to elevate an experience to new heights.
+这种类型的游戏流程给玩家带来的自由是无与伦比的——这使得玩家可以自己规划游戏路径，自己设置目标，从而让他们感觉更有代入感，以及在完成这些目标时更有满足感。因为不是游戏叫你做什么你就做什么，而是 *你* 要做什么你就做什么。这种设计的强大力量，特别是在一个像 Minecraft 这样的开放游戏当中，能够成为你把游戏体验提高到一个全新高度的关键工具。
 
- If you’ve played either version of *RuneScape,* you know exactly what I mean.
+如果你玩过某一个版本的 *RuneScape*，那你肯定会知道我在说什么。
 
-The one major downside of backpropagation is that it requires a way for players to graph out the content available, as well as a way for the content to be visible from a *bird’s eye view*. Fortunately, every modded player already has a view of every item in the pack in *JEI -* so all that’s missing is for you, the pack maker, to organize the content in there in a digestible way that can be sorted and searched through by a player so they can build their own backpropagation.
+“后向传播”设计方法的一个主要缺点是，它要求玩家设法画出或者想象出可操作的游戏内容的图表，也就是想办法“*鸟瞰*”所有的游戏内容。幸运的是，所有的 MOD 玩家都可以通过 JEI 阅览整合包中每一个物品；所以唯一缺少的环节在于，作为整合包作者的你，需要把这些游戏内容用一种便于理解的方式组织起来，使得玩家可以排序、搜索它们，从中构建起属于他们的“后向传播”。
 
-> Both *Crucial 2* and *Bliss* utilize a combination of multiple systems to make this happen. Establishing potential goals is done through the *Gossip* system, and being able to search for blocks or items you may wish to get in *JEI.* Further backpropagation often comes from searching up specific keywords in *JEI,* like “bigger inventory”, which redirects to the Backpack from *Quark Oddities*.
-> 
+> *Crucial 2* 和 *Bliss* 都结合使用了多个游戏机制来达到这一目的。利用“闲话”系统来建立潜在的目标，利用 JEI 实现搜索任何你想要的方块或物品的功能。玩家“后向传播”的推进常常通过在 JEI 中搜索一些特定的关键词来实现，比如“bigger inventory”（更大的背包），这会指向 Quark Oddities 夸克-奇思妙想 MOD 的背包。
 
-### Less is more
+### 少就是多
 
-Looking back at the previous point, given a player will have full vision of everything they can do, it’s important to make it so everything is relevant. One very important term to keep in mind here is that of “[*analysis paralysis*](https://en.wikipedia.org/wiki/Analysis_paralysis)” - this is, essentially, the feeling that you can not make a proper choice due to being presented with far too many options.
+回到我们的前一个讨论点，假如玩家能够看到所有他们可以做的事情，那么把所有的事情关联起来就很重要。
+这里要记住的一个非常重要的术语是“[分析瘫痪](https://en.wikipedia.org/wiki/Analysis_paralysis)”——简单来说，就是一种由面临太多的选项导致的，让你无法做出适当的选择的感觉。
 
 Analysis Paralysis can often be thwarted by limiting the amount of options presented to the player at one time - but in a scenario where a player is eyeing through *JEI* to figure out what to do next, you don’t want to flood them with dozens, if not hundreds, of viable paths.
 
