@@ -241,106 +241,96 @@ Default Options MOD 让你可以给玩家预设一套自定义的选项配置，
 
 这就是有意思的部分了。
 
-Now that we have our base and our tools ready, it’s time to put them to work. There are two types of tasks you’ll have to tackle in this stage: **Issue**, and **Vision**.
+现在我们已经把基础和工具准备好了，是时候让它们运转起来了。这个阶段你有两大任务：**解决问题** 与 **实现愿景**。
 
-- **Issue** tasks are problems you find with the mods or how they play with each other
-- **Vision** tasks are those that pertain to creating the experience you want to deliver
+- **解决问题** 是指解决你从 MOD 本身或者 MOD 之间的协同关系中发现的问题；
+- **实现愿景** 是创造你想要带给玩家的游戏体验
 
-**Vision** tasks are, unfortunately, out of the scope of this document, as the way you chase your vision is entirely up to you. If you want to make an expert progression pack, be prepared to change a lot of recipes. If you want to make some adventure and combat focused romp, open up those worldgen data pack json files. Quest pack? Better start writing. That part is for you to determine.
+不幸的是，**实现愿景** 这一任务是超出本文所讨论的范围的。毕竟，追寻你的愿景的道路，完全只能由你自己来走。如果你想要搞一个专家进度包，你得准备好改一大堆配方。如果你想搞一个冒险和战斗相关的整合包，你得准备好迎接世界生成数据包里的 JSON 文件。任务剧情整合包？你最好现在开始动笔写文案。这部分由你自己来决定。
 
-Instead, I’ll focus on more generic advice for the tenets I follow when creating packs, as well as the **Issues** that can break those tenets and need to be resolved.
+我这里换一个东西来讨论：我把重点放在给出一些一般性的建议，也就是“我做包时遵循的原则”，以及讨论可能打破这些原则的、需要解决的问题。
 
-### Disabling features is good, actually
+### 实际上，去掉一些内容是好的
 
-Let’s start with a kicker. For me, the way to think about this is that, in disabling a feature, you aren’t *removing* it, but rather opting *not to add it*.
+我们从清理和剔除开始。对于我来说，我认为如果我“去掉一个游戏内容”，不是我 *删除* 了它，而是我 *不打算加* 它。
 
-Whenever someone asks me why a feature disabled, my answer is to explain my stance on adding features. If you think of disabling features as *removing them*, you’re making the assumption that the default state of a bit of content is *added to the game,* and this just isn’t true.
+每当我被人问及为什么一个去掉某个游戏内容的时候，我总是用“解释我添加游戏内容的立场”来回答。如果你觉得去掉一个游戏内容是 *删除* 了它，你就是在假定这个内容在默认的情况下就是应该被 *加入游戏*。这不对。
 
-Every feature in every mod you haven’t added yet is ***not** added to the game,* and you choose to *add* it when you include the mod. I believe that disabling features is not turning them back to *not added*, but rather pick and choosing which features get *added* in the first place.
+任何一个你还没加进游戏的 MOD 包含的任何一个游戏内容都是 **没有** 被加进游戏的，直到你选择要添加这个 MOD 的时候，它才会被 *加* 到游戏里面。我相信，去掉游戏内容的操作，不是使这些内容回到 *没加的状态*，而首先应当是挑选哪些游戏内容要被 *加到游戏里面*。
 
-Just because a mod comes with a myriad of different features doesn’t mean all of them are appropriate for what you’re trying to make. More often than not, you just want a few. If you’ve played any of my packs, you know I cut liberally, because I’m selective about I want to add. I prefer to examine each feature with a positive-focused mindset (”*what does this bring to the table?*”), rather than a negative-focused one (”*is this bad enough to remove?*”).
+道理很简单，一个 MOD 有一大堆的内容，不等于这些内容都适合你想要做的整合包。通常，多数内容是你不要的，只有其中的少部分是你要的。你要是玩过任何一个我做的包，你就知道我会随自己的想法删掉一些游戏内容，因为我对我想添加的东西是有选择性的。我更喜欢用加法思维来审视每一个游戏特性（*它改变了游戏的什么东西？*），而非减法思维（*它是否坏到我非删掉它不可？*）
 
-This is the part where it’s important to know your audience, and be able to place yourself in their shoes. A lot of features might be ones you’re not particularly interested in yourself, but other players might love, but you can’t go too crazy with this thought, or you’ll end up massively diluting your pack.
+在这里，重要的是要了解你的玩家，并能站在他们的角度考虑问题。很多游戏内容可能是你自己不特别感兴趣，但别的玩家喜欢的；但你不能掉进这种想法的陷阱里，否则你最终会把整合包的主题稀释得很淡。
 
-It’s important to strike a balance between cutting features and letting features in. This is something you learn over time, and is definitely not a science.
+在删内容和加内容之间找一个平衡很重要。这是需要花时间积累经验的，而绝对不是像科学一样有公式和定律的。
 
-> *Crucial 2* has 994 disabled items (non-vanilla items hidden from JEI).
-> 
+> *Crucial 2* 删掉了 994 个物品（在 JEI 中隐藏的非原版物品）。
 
-In the following few sections, I’ll explain multiple reasons you’d opt *not* to add a feature.
+在接下来的几个章节，我会再解释几个你选择 *不加* 某个游戏内容的理由。
 
-### Create a cohesive whole
+### 创造一个连贯的整体
 
-While in a technical state, a pack is just a bunch of disconnected mods glued together by configs and scripts*,* I like to think of it as more than that. Put yourself in the position of someone shipping *an actual game*. 
+尽管从技术上看，一个整合包就是一堆互不连接的 MOD 用配置和脚本粘在一起；但是我更倾向于认为，整合包不只是这样而已。你得把自己当做一个 *开发一个实际的游戏* 的人。
 
-When you play a commercial game, you notice inconsistencies in it. 
+当你玩一个商业游戏的时候，你发现里面有一些不一致的地方：
 
-- Maybe this menu uses one texture while another uses a different one for no reason.
-- Why is this item named “*Thing of Person*” and this one “*Person’s Thing*”?
-- Why does this boss drop items you have to combine into big items to craft but this other one already drops the big items?
-- Why is the first point in this list an affirmation and the others questions?
+- 这个菜单好像用了一个和那个菜单不一样的材质，而且没有任何理由要这样做。
+- 为什么这个物品名叫“*Thing of Person*”，而那个物品却名叫“*Person’s Thing*”？（译者注：这两个都表示“某人的物品”，意思完全相同，但写法却不一致）
+- 为什么这个 BOSS 的掉落物必须收集几个，再合成为一个大物品，而那个 BOSS 却直接掉落这个大物品？
+- 为什么这个列表中的第一点是肯定句，而其他的是疑问句？
 
-These are simple example questions that create blemishes in a game. When you’re taking in dozens or hundreds of mods made by dozens or hundreds of disconnected authors, the amount you are bound to find will be incredibly high.
+这些都是游戏内容的不一致性引起游戏的瑕疵的简单例子。当你从几十上百个互不认识的作者那里搞来几十上百个互不相关的 MOD 放进整合包的时候，你已经把你不得不面对的问题叠得比山都高了。
 
-By thinking of making a pack as if you were making a game, these blemishes become things you are more sensitive to, and likely to fix. This is important because every small inconsistency can act as a small road bump in a player’s overall experience.
+你要是能把开发整合包当做开发一款游戏来对待，你就能更敏锐地发现这种瑕疵，你就更有可能修复它。这很关键，因为每一个小小的不一致性都是玩家整个游戏体验中的一个小小的路障。
 
-> *“Oh right this item is from another mod, I can’t use it with this machine”*
-- strawman I just made up but you’ve probably heard a lot
-> 
+> *“好吧，这个物品是另一个 MOD 的，我不能把它放到这个机器里”*
+- 这话是我现编的，但是你恐怕听了无数次了（译者注：作者原话如此）
 
-> *“Why do these two Cherry Log blocks not stack… oh right”*
-- average kitchen sink vanilla+ modpack player
-> 
+> *“为什么这两种樱木不能堆叠啊，... 好吧”*
+- 来自一般的“原版+”水槽包玩家
 
- Each blemish is a “*ugh, why didn’t they fix this*” thought in the player’s head. While each one is minor individually, they pile up, and over time can cause the player to enjoy your pack less and less.
+每一个瑕疵都对应着玩家脑海里的一句“嗨呀，他们为什么不把这个修了啊”。每一个独立的小问题累积起来，玩家玩了一段时间就会变成导致你的玩家越来越不喜欢你的整合包的大问题。
 
-By thinking of making a game, we think of reducing these road bumps and bits of inconsistency - we think of making the experience as smooth and logical for a player. This is important.
+从开发游戏的角度去思考，我们希望减少这种“路障”一般的不一致性，我们要的是给玩家带来一个顺畅且符合逻辑的游戏体验。这很重要。
 
-You can think of this as a high amount of nitpicking or unnecessary polish for minor effect, which you likely will if you are used to modpacks that don't do this. But let me tell you that these tiny changes are the key difference between a good pack and a great one.
+你大可以认为这是鸡蛋里挑骨头，或者是为了一点点皮毛的效果做无用功；特别是，如果你已经被那些不处理这种问题的整合包磨得没有脾气了的话。但是我告诉你，这种细微的改变，就是“好整合包”与“伟大的整合包”之间相差的那关键的一步。
 
-Here are some inconsistencies I like to watch out for and patch up:
+下面我列举一些我一见到就会去修理掉的游戏内容不一致性：
 
-- Multiple items with the same or similar look, name, or functionality (*content overlap*)
+- 有类似外观、名称或功能的多个物品（*内容重复*）
     
-    > In *Crucial 2*, both *Charm* and *Environmental* add a Kiln block. These fill a similar purpose, so one was disabled.
-    > 
-- Mod content resulting in missing expected combinations (*content gaps*)
+    > 在 *Crucial 2* 当中，Charm 和 Environmental 自然环境这两个 MOD，都加了一个窑炉方块，功能还是一样的，所以我就删掉了一个。
+- 理应能够相互结合，但实际上不能的 MOD 内容（*内容环节缺失*）
     
-    > e.g. A mod adds Willow Wood, and another adds Tables for each type of wood. Unless intentionally coded, you won’t be able to make a Willow Table.
-    > 
-- Specific features being far too complex in comparison to others in the pack
+    > 例如，一个 MOD 添加了柳木，另一个 MOD 添加了每种木头做的桌子。除非有意写了联动代码，不然你不可能做得了柳木的桌子。
+- 某个与整合包内其他的游戏内容/机制相比，特别复杂的游戏内容/机制
     
-    > In *Crucial 2*, all the upgrades for *Storage Drawers* are disabled to bring the level of complexity of the feature down to the same as the other mods in the pack.
-    > 
-- Specific non-core sections of the game being weighed in content far too heavily versus others
+    > 在 *Crucial 2* 当中，所有 Storage Drawers 储物抽屉 MOD 的抽屉升级都删掉了。这是为了把这个 MOD 的复杂程度降到和整合包里其他的 MOD 相同的水平。
+- 某一部分非核心的游戏内容相比其他部分，在整合包中占据的比重过大
     
-    > I do not include *Pam’s Harvestcraft* in packs I make due to the sheer amount of content it adds, which would unbalance the game heavily towards farming.
-    > 
-- Visual inconsistencies in textures, naming schemes, tooltip styles, or type of functionality
+    > 我做的整合包都不加 Pam’s Harvestcraft 潘马斯农场 MOD。因为它加的内容实在太多了，这会导致整个游戏过度地偏向农业内容。
+- 材质、命名方式、tooltip 写法等产生的视觉上的不一致性，或者功能种类的不一致性
     
-    > *Crucial 2* retextures and renames many different items and blocks. For example, *Charm*’s “Bat in a Bucket” is renamed to “Bucket of Bat”, to be consistent with the naming scheme in vanilla.
-    > 
+    > *Crucial 2* 重命名了很多物品/方块、重画了很多物品/方块的材质。比如，Charm MOD 的“Bat in a Bucket”物品被改名为“Bucket of Bat”，这样就和原版游戏的命名方式一致了。
     
-    > In *Bliss*, the tooltips for *Corail Woodcutter* blocks are hidden, as equivalent blocks in the rest of the pack do not have any.
-    > 
-- Multiple different outcomes for the same recipe
+    > 在 *Bliss* 中，Corail Woodcutter MOD 的方块的 tooltip 都隐藏了，因为整合包中其他和它们等效的方块也都没有 tooltip。
+- 一个配方有多种不同的输出
     
-    > Some modpacks like to use the *Polymorph* mod for this purpose. I just change the recipes to not overlap.
-    > 
+    > 有的整合包会用 Polymorph 多态合成 MOD 来解决这个问题，但我就会直接把配方改了来避免冲突。
 
-This list is also non-exhaustive but should help you give an idea of the main types of blemishes I look for and try to fix.
+同样地，这个列表不能穷尽的部分还有很多。但是它可以让你了解到我主要寻找和尝试修理哪些游戏内容的瑕疵。
 
-Please know that you will never be able to fix everything. Mods are often fickle, and as a third-party author, there is only so much you can do - still, you should try your best within your constraints, and avoid mods that create blemishes large enough that can take players out of the experience by themselves.
+你要清楚一点，你绝对不可能把所有的问题都修了。MOD 可以出的问题有很多种，你作为一个第三方作者，你做得到的事情实在是有限的。然而，你仍然应当在你的能力范围内竭尽所能，去避免 MOD 产生一些严重到让玩家丧失游戏体验的问题。
 
-### Let the player discover
+### 让玩家自己发现
 
-I’m not a fan of directly telling players what exists for them to use.
+我不是那种喜欢直接告诉玩家“你有哪些东西可以用”的人。
 
-Ideally, you want to *lead* the player to the feature, while still making them believe they found the feature on their own. Telling people directly that they should make something takes away from the feeling of self-made creation that *Minecraft* relies on, and ends up in a more traditional style of linear game.
+理想的情况下，你既想 *引导* 玩家去玩这个内容，又想让他们相信，他们是自己发现这个内容的。“直接告诉玩家应该做什么”的做法，会破坏玩家“自由创造”的感觉，而这正是 Minecraft 这款游戏所依赖的东西；你这样搞，就把整合包搞成传统风格的线性游戏了。
 
-You can introduce players to features via hints in documentation, dotting the feature in the world, or strategically placing it in the middle of an important crafting chain, with some info on *JEI* of what the item does.
+你可以通过说明文本中的线索，向玩家介绍游戏内容；然后把这个游戏内容散落在世界之中，或者巧妙地把它放在一条重要的合成链条当中，再往 JEI 里写点关于这个物品能做什么的信息。
 
-I like designing content discovery flows via a method I call *Backpropagation*, which is, in essence, having the player start with a goal or idea in mind, and from there going back to discover the steps they need to take to bring this idea to reality.
+我喜欢用一种我叫做“后向传播”的方法来设计内容探索流程。它本质上就是，假设玩家脑海中已经有一个目标或想法，然后从目标出发，倒推玩家实现想法、达成目标所需的探索步骤。
 
 My personal favorite example of a game that implements *Backpropagation* is *RuneScape*, be it the modern version, or the oldschool one. Here’s an example of a player thinking “*I wish I could move around the world better”.* Click on the arrows on the left to backpropagate.
 
