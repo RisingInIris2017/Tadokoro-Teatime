@@ -381,93 +381,82 @@ Default Options MOD 让你可以给玩家预设一套自定义的选项配置，
 回到我们的前一个讨论点，假如玩家能够看到所有他们可以做的事情，那么把所有的事情关联起来就很重要。
 这里要记住的一个非常重要的术语是“[分析瘫痪](https://en.wikipedia.org/wiki/Analysis_paralysis)”——简单来说，就是一种由面临太多的选项导致的，让你无法做出适当的选择的感觉。
 
-Analysis Paralysis can often be thwarted by limiting the amount of options presented to the player at one time - but in a scenario where a player is eyeing through *JEI* to figure out what to do next, you don’t want to flood them with dozens, if not hundreds, of viable paths.
+避免玩家陷入分析瘫痪的方法，通常来说，是限制每次呈现给玩家的选项数量；比如，在玩家浏览 JEI，思考接下来该做什么事的时候，你一定不会想用几十上百条可选择的路线淹没他们。
 
-An area I usually try and cut down on is that of variant blocks. Many mods tend to add lots of variants for building blocks, be them texture variants, or shape variants. The more you add, the more complex each choice becomes. Picking a block palette goes from grabbing some colors that go together and finding blocks in those colors to creating complex textures, gradients, visual energy flows, etc. 
+一个我经常尝试删减的方面，是方块的各种变种。很多 MOD 喜欢给建筑方块加一大堆变种，包括具有不同材质的变种，或者具有不同形状的变种。你加的变种越多，玩家所做的每一个选择就都会越难。建立一个方块的“调色板”：选取一些可以搭配的颜色，选取这些颜色的方块来构成复杂的材质、原料、视觉能量流，等等。
 
-Depending on your style of pack, this may actually be what you want. I’m aware many packs exist with the focus of providing highly complex building options, and that’s great - but if that’s not your focus, try to avoid overloading the player.
+取决于你整合包的风格，这可能就是你实际上需要的东西了。我知道有许多整合包的重点是提供高度复杂的建筑材料选项，这固然很好；然而，如果你的整合包重点不在这里，那你就要尽量避免让玩家在做选择的时候大脑过载。
 
-Additionally, for building, the more options are present and the higher complexity is, the higher the skill ceiling becomes. When you increase the upper end of what a build can look like, other builds within the same context end up being compared to said high end, thus inadvertently also increasing the skill floor - the minimum required amount of building skill to create something that, in context, passes as “visually pleasing”.
+除此之外，就建筑这个方面来说，你提供的选项越多、越复杂，技术上限就会越高。当你提高了你的整合包环境下建筑的上限时，相同整合包背景下的其他建筑，也会被拿来和上述的高端建筑做比较，从而无意中也提高了你整合包当中建筑技术的下限；也就是说，至少需要一定的建筑技术，才能在你的整合包中创造出“视觉上赏心悦目”的东西。
 
-Upping the amount of skill and effort required to make a good looking build within the context of your pack has the potential side effect of alienating many players on the lower end of those metrics. Consider that *Minecraft* is so incredibly popular in part because of its simplicity, and how approachable it is compared to more “flexible” options like CAD or 3D modelling.
+那么，如果你的整合包拔高了“造一个好看的建筑”所需的技术和努力的要求，那就可能会产生劝退不擅长做建筑的许多玩家的副作用。你想想，Minecraft 这么流行，一部分原因就是因为它简单；虽然它不像 CAD 或者 3D 建模那么“灵活”，但它更加平易近人。
 
-> I don’t include popular massive building block mods such as *Chisel*, *Chipped*, **or *Chisels and Bits* in my packs due to the amount of mental overhead they introduce. *Chisels and Bits* in particular introduces such an overwhelming amount of options that it can leave non-users in the dust by comparison.
-> 
+> 我不会在我的整合包里加那些流行的、大量添加建筑方块的 MOD，比如 Chisel 凿子 MOD、Chipped MOD 或者 Chisels and Bits 雕凿工艺 MOD，因为它们很容易让玩家大脑过载。尤其是 Chisels and Bits 雕凿工艺 MOD，它引入了大量的建筑选项，不擅长建筑的玩家在玩这种 MOD 的时候就要落入下风了。
 
-### A bad apple can spoil the bunch
+### 一颗老鼠屎，能坏一锅汤
 
-A chain is only as strong as its weakest link is. While not a direct translation to game design, you can think of it as the fact that one poor part in a game can bring down the whole thing.
+木桶能装多少水，取决于最短的一块板。虽然这话不能照搬到游戏设计中，但你可以把它理解成：游戏中一个糟糕的部分，可以把整个游戏毁掉。
 
-How many games do you know that you recommend with a “yeah it’s really good, **but**…” - the weak chains, or bad parts of the game, are those “but”s. Ideally, you want to identify what the “but”s in your project are and either improve or cut them out.
+你还记得你曾经给多少个游戏打过“它的确很好，但是...”这种评语吗？木桶的短板、游戏做得差的部分，就是这些“但是”。理想情况下，你要能够找到你的整合包里有哪些这种“但是”，并改进或删减它们。
 
-This section is short, because all it intends to say is that it’s better to have less content than bad content. “Bad content” is subjective, and can often be content that’s just not up to par with other, higher quality, parts of the pack.
+这一节很短，因为一言以蔽之，我想说“与其内容不好，不如内容不多”。“糟糕的游戏内容”的判断标准是主观的，通常就是那些与其他质量更高的部分不相称的内容。
 
-You can think of this as grading. If you’re an A+ student, getting a B+ is going to put your average grade down. B+ is still a good grade, but having gotten it lowers your average. In the same way, including poor quality features or mods lowers the average quality of your pack.
+你可以把这个理解成老师给学生打分。你要是个能拿 A+ 的优等生，你拿到 B+ 的成绩就会把你的平均绩点拉低。尽管 B+ 仍然是一个好成绩，但是它就是会拉低你的平均成绩。同理，你整合包里低质量的游戏内容或 MOD，也会把你整合包的平均质量拉低。
 
-> I’ll refrain from naming any particular mods here as to not upset any of the authors, but in the design phase for *Crucial 2*, many entire mods were removed simply for not being up to par with the quality standards of the others.
-> 
+> 为了不让任何一个 MOD 作者难堪，我就不在这里点名了；但是，在 *Crucial 2* 的设计阶段，我把不少 MOD 整个去掉了，因为它们达不到其他 MOD 的质量水准。
 
-### Protect the player from themselves
+### 保护你的玩家不受伤害
 
-Players are not stupid. When given multiple options to reach a goal, a player will, in the majority of situations, take that which is more efficient. This behavior is perfectly normal, and just simply human behavior - why would you purposely hamstring yourself when a more effective option is right there?
+玩家也不傻，如果你给他们提供达成一个目标的多个选项，他们中的大多数会选择选项当中效率最高的。这种行为实在是太正常了，而且就是人类本能——如果有更高效的方法可选，你会逼着自己不选吗？
 
-Your part as a designer comes in protecting the player from letting these urges ruin their fun.
+作为游戏的设计者，你的职责是保护玩家的游戏乐趣不被这种冲动毁掉。
 
-> “*Make the fun part also the correct strategy to win*”
-- Mark Rosewater, lead designer for *Magic, the Gathering,* at [GDC 2016](https://www.youtube.com/watch?v=QHHg99hwQGY)
-> 
+> “*保证游戏有趣的部分同时也是这款游戏中正确的取胜策略*”
+- *Magic, the Gathering* 游戏的首席设计师 Mark Rosewater 在 [2016 年 GDC 游戏开发者大会](https://www.youtube.com/watch?v=QHHg99hwQGY) 上的讲话
 
-Here’s a very straightforward, abstract, example: Let’s say there’s an item in the game that can be acquired in two ways - a enjoyable way and a boring way. The enjoyable way creates 1000 per hour, and the boring way 2000. Any player wishing to create this item would naturally take the boring way, as without having tried out both ways prior, they do not know which one is enjoyable and which one is boring, as all they see is the efficiency.
+我给你一个简单直接的、抽象的例子：假如游戏中有一个物品，可以用两种办法获得：一种是好玩的方法，一种是无聊的方法。好玩的方法一个小时可以产出 1000 个这种物品，然而无聊的方法一小时可以产出 2000 个物品。那么想要这个物品的玩家，还没把两种方法都试一下，就会自然而然地去选择那个无聊的方法。他们不知道哪个好玩、哪个无聊，他们的眼睛里只有效率。
 
-In this situation, you’d either remove the boring way entirely, or make it so the fun way is more efficient.
+这时候你要么就把无聊的方法整个去掉，要么就让那个好玩的方法效率更高。
 
-Obviously, in a real life scenario, things aren’t as black and white, and this section requires a lot of nuance that I can’t fully fit here. It’s very important to watch how you and your playtesters interact with what you’ve created, and ensure they’re actually doing the fun stuff, and not getting themselves in uninteresting grinds you never intended to be ideal.
+显然，现实生活中，事物也不是非黑即白的。讨论这个话题需要讨论很多细微的差别，这里是写不下的。很重要的一点是，你要观察你和你的试玩员是怎么和你所创造的东西互动的，并确保他们确实在玩好玩的内容，而不是在玩你从未设想过的无聊的内容。
 
-Also for the love of god please patch any dupes.
+另外，看在上帝的份上，请把整合包里出现的任何重复的东西处理掉。
 
-> In 2015, I heavily nerfed, and eventually removed, the passive generating flowers from *Botania* for this very reason.
-You can read more about this decision from 7-years-ago me [here](https://www.notion.so/Sins-of-a-Solar-Empire-or-The-Passive-Generation-Conundrum-c5971117fd3648139a4a078541096fac). I do not fully agree with everything in this post to this day, but the historical context is definitely important.
-> 
+> 2015 年，我大削并最终删除了 Botania 植物魔法 MOD 中的被动产能花。
+你可以在 [这里](https://www.notion.so/Sins-of-a-Solar-Empire-or-The-Passive-Generation-Conundrum-c5971117fd3648139a4a078541096fac) 详细了解我 7 年前所做的这个决定。时至今日，我并不完全同意这个帖子中的所有观点，但历史背景绝对是重要的。
 
-### Create avenues for fulfilment
+### 为玩家创造自我实现的途径
 
-Ultimately, as a designer, we want the player to *feel* something. I personally like to target the feeling of fulfilment upon finalizing an awesome build that’s present in vanilla *Minecraft -* that “I’ve done it!” moment when you look back at your creation and feel all the dopamine you’ve been building up while creating it release.
+作为设计者，我们的终极目标是让玩家 *体会* 某种东西。我个人倾向于把自我实现感建立在“在原版 Minecraft 中完成一个超级棒的建筑”这件事上。在“我终于做完了！”的那个瞬间，你回想你的创作历程时，你会感觉到你在创作中所积累的多巴胺全部释放出来。
 
-I have previously called this style of design “Player Focused Design”, which is the term I use to describe the mindset for features in *Quark Oddities.*
+我曾经把这种设计风格叫做“以玩家为中心的设计”，这个术语也被我用来描述 Quark Oddities 夸克-奇思妙想 MOD 中那些游戏内容的设计思路。
 
-To do this, try to create challenges that players will face that require some sort of ingenuity or personal touch to solve. This often comes from messing with some sort of preconceived notion in the game, or by making the automatic method to generate some important resource be quirky and not immediately intuitive.
+要做到这一点，首先要为玩家创造一些将要面临的挑战，它们需要玩家的某种独创性或个人能力来解决。通常可以扰乱游戏中玩家的某种先入为主的观念，或者使某些重要资源的自动化生产方法变得古怪而反直觉。
 
-Combining with backpropagation and good a bird’s eye view of the game’s content, we can turn goals like “automate this resource” into a player having to identify what components they need, then looking for them individually, and going on further adventures or tangents to acquire them.
+结合“后向传播”的设计思路、辅以“鸟瞰”游戏内容的视角，我们可以将类似于“自动化这个资源的生产”这样的目标转化为：玩家需要找出哪些原料是他们需要的，自己去寻找它们，为了获得这些东西，要进行进一步的冒险，或寻找新的切入点。
 
-At the end of all that, given the player set themselves up for this goal and all it came with, and overcame the challenges (ideally, with a bit of nudging from documentation bits we laid down), they’ll feel incredibly fulfilled - and that completes *our* goal as well.
+在上述所有这些的最后，假如玩家已经把这个目标和它所需要的一切条件都准备好了，并克服了挑战（如果是在我们写好的说明文案的点拨下实现的，那就更好了），那么他们会体验到极强的自我实现感，与此同时，*我们* 的目的也达到了。
 
-In essence, when creating, create something the player will create with.
+本质上，创造游戏，就是创造玩家可以用来创造的东西。
 
-> In *Crucial 2*, Iron Golems do not drop Iron Ingots, specifically to throw a wrench in the plans of making a standard Iron farm. Iron, and other ores, can still be farmed in the pack, using the Toretoise from *Quark*, but this method is much more complex, and requires using tools the pack provides.
-> 
+> 在 *Crucial 2* 中，铁傀儡不再掉落铁锭，这是有意在给想要搭建原版刷铁机的玩家制造挑战。铁锭和其他矿物仍然可以利用 Quark 夸克 MOD 中的乌龟来进行自动化生产，但这个方法更加复杂，需要使用整合包中提供的其他工具来完成。
 
-### Bringing it back
+### 把它做出来
 
-Having introduced my main pillars of design, it’s now time to get our hands dirty and make something with them.
+整合包设计的主要支柱树立起来之后，是时候在此基础上动手做包了。
 
-At this point, I’ll have a preliminary mod list, a small list of immediate issues found in early testing, and ideas that I want to bring to life. Here’s the order in which I tend to tackle creating the pack:
+这个时候，我已经整理出了初步的 MOD 列表，列出了所有在早期测试中一下子就能发现的问题，并确定了我想要实现的想法。我通常按照如下的顺序做整合包：
 
-- Establishing a first-pass list of content you wish to disable.
-- Loading up every mod’s config and tweaking them initially as necessary - this often results in a decent amount of the immediate issues just going away as configs often allow you to remove features that are otherwise problematic.
-- Hiding every item from *JEI* that was in the disabled items list, and then writing a simple *CraftTweaker* script that removes the recipes from all of them.
-    
-    > *Bliss* uses a python script to transpose the list of items hidden from *JEI* and generate the zs script to remove them.
-    > 
-- Creating recipe changes or removals to help bridge mods or fix issues.
-    
-    > In both *Crucial 2* and *Bliss*, Paintings and Scaffolding are made using Canvas from *Farmer’s Delight,* encouraging players to delve into that mod. Furthermore, Rope from *Farmer’s Delight* is an important resource in *Crucial 2*, and its recipe is changed to require Yak Hair from *Environmental*.
-    > 
-- Open ended development - at this point, the pack should be in a fundamentally *decent* state. Conflicts should be fixed, and a very basic flow to progress should be introduced. Now it’s time to start making more in-depth changes. This falls under the **Vision** part of development, and will ultimately depend on what your goal is.
-    
-    > In *Bliss*, a lot of this was configuring miscellaneous parts of game to adapt to the peaceful-like gameplay - such as writing custom *Apathy* mod rulesets, and changing loot tables.
-    > 
-- Writing documentation for the pack - this part includes writing straightforward guides in a *Patchouli* book, as well as smaller micro-documentation in *JEI,* and laying the foundations for backpropagation via tagging items correctly for search and setting up hints and goals for players to look for.
-- Playtesting - at this point, the pack should be in a reasonably finished state, and it’s time to throw it at a small trusted crowd to break it and give you feedback on how it plays. The feedback you receive will lead you back to a previous step in this list. Repeat until you’re content with the results.
+- 把最想禁用的游戏内容都列出来。
+- 把每一个 MOD 的配置文件都打开，如有必要，初步改动一下——这通常就消灭了相当一部分“一下子就发现的问题”，因为配置通常能让你删除那些本来有问题的功能。
+- 从 JEI 中隐藏那些被禁用的物品，再写一个简单的 CraftTweaker 脚本把它们的配方全部删掉。
+    > *Bliss* 使用了一个 Python 脚本，把 JEI 配置文件中的物品隐藏列表翻译成删除这些物品的配方的 ZenScript 脚本。
+- 改动或者删除配方，使得 MOD 的内容彼此衔接，或者修复一些问题。
+    >  *Crucial 2* 和 *Bliss* 中，画和脚手架是用 Farmer’s Delight 农夫乐事 MOD 的粗布合成的，鼓励玩家深入研究这个 MOD。而且，Farmer’s Delight 农夫乐事 MOD 中的“绳子”物品，在 *Crucial 2* 中是一种重要的资源，而它的配方则被改成了需要 Environmental 自然环境 MOD 的”牦牛毛“物品。
+- 开放式发展 - 在这个阶段，整合包应当已经初具雏形。MOD 冲突已经被处理掉了，最基本的游戏流程已经形成了，那么就要进行更加深入的魔改了。这个部分也就是你在开发整合包时面临的 **实现愿景** 这一任务，它最终将取决于你设计整合包的目标。
+    > 在 *Bliss* 中，这个部分的魔改，大多数集中在调整游戏的杂项内容，使之适应类似于”和平包“的游戏环境。例如编写自定义的 Apathy MOD 的规则集，以及修改战利品表。
+- 给整合包编写说明文案 - 这一部分包括编写 Patchouli 手册中直接的引导文字，还包括 JEI 中的小段文字提示，以及通过给物品打上合适的搜索标签、设置提示和玩家追寻的目标，来实现”后向传播“的设计思路。
+- 试玩 - 到这个时候，整合包应当已经相对接近完成，是时候把它交给一小帮靠谱的朋友，让他们体验一下，然后提供给你一些关于”整合包玩起来怎么样“的反馈了。你接收的反馈会引导你回到这个路线图中前面的某一步。重复这个流程，直到你对结果满意为止。
 
 One thing to keep in mind during this process is that your mod list is *not* set in stone. In my development cycles, many mods end up added or cut during late stages of development, either because some specific feature was missing from the pack, or because after development, the mod now falls into pitfalls that go against the design principles.
 
