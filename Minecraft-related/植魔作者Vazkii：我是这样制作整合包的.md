@@ -167,7 +167,7 @@ Patchouli 和 JEITweaker 这类 MOD 可以让你为整合包编写游戏内的�
 
 JEI 的配置文件中可以设置一些搜索标签，便于玩家利用它们搜索物品。利用数据包，你可以给物品加标签，作为方便搜索的目录。
 
-> *Crucial 2* 和 *Bliss* 都大量运用了这个机制。它们都提供了用于模糊搜索的标签，比如“building block”和“decorative block”，以及一些专门设计的搜索重定向，比如“weather sensor”会指向 Supplementaries MOD 的 [风向标](https://www.mcmod.cn/item/430708.html) 物品。（译者注：此处指向 MCMOD 百科的超链接为译者添加）
+> *Crucial 2* 和 *Bliss* 都大量运用了这个机制。它们都提供了用于模糊搜索的标签，比如“building block”和“decorative block”，以及一些专门设计的搜索重定向，比如“weather sensor”会指向 Supplementaries MOD 的“风向标”物品。
 
 ### 重命名或者重画材质
 
@@ -458,50 +458,46 @@ Default Options MOD 让你可以给玩家预设一套自定义的选项配置，
 - 给整合包编写说明文案 - 这一部分包括编写 Patchouli 手册中直接的引导文字，还包括 JEI 中的小段文字提示，以及通过给物品打上合适的搜索标签、设置提示和玩家追寻的目标，来实现”后向传播“的设计思路。
 - 试玩 - 到这个时候，整合包应当已经相对接近完成，是时候把它交给一小帮靠谱的朋友，让他们体验一下，然后提供给你一些关于”整合包玩起来怎么样“的反馈了。你接收的反馈会引导你回到这个路线图中前面的某一步。重复这个流程，直到你对结果满意为止。
 
-One thing to keep in mind during this process is that your mod list is *not* set in stone. In my development cycles, many mods end up added or cut during late stages of development, either because some specific feature was missing from the pack, or because after development, the mod now falls into pitfalls that go against the design principles.
+在这个过程中，你要时刻记得，你的 MOD 列表 *不* 是固定不变的。在我的开发周期中，很多 MOD 是在开发的后期才添加或删除的，前者是因为整合包缺少某个关键内容，后者是因为在进行了整合包开发之后，某个 MOD 掉进了和设计原则冲突的陷阱。
 
-Creating a pack is not a science, and you’ll find yourself going back and forth between the steps often, as you identify further issues and vision goals. Make sure to take note of everything that needs to be done, and do some basic playtesting yourself to make sure what you created is actually enjoyable.
+做包不是有公式和定律可循的科学， 每当你确定 **解决问题** 和 **实现愿景** 两大任务的下一步目标时，你会经常在这些步骤之间反反复复。所以你需要养成把所有要做的事情记录下来的习惯。另外，亲自做一些基础的试玩，以确保你做出来的东西确实是好玩的。
 
-> *Bliss* development used *GitHub* issues to note down bugs and missing pieces. I’ve also previously used *Trello* when collaborating with Dylan for the original *Crucial.*
-> 
+> *Bliss* 的开发使用了 GitHub 的 Issue 来记录 Bug 和缺失的内容。我和 Dylan 合作开发最初的 *Crucial* 整合包的时候，我也曾经使用过 Trello。
 
-With the pack created, I whip up a fancy image to market it and post it on social media. Given I already have a large audience and am a house name, I don’t think it’s fit for me to give marketing advice, but at the very least post about it on the [/r/feedthebeast](https://www.reddit.com/r/feedthebeast/) subreddit with a catchy graphic so people know it exists.
+整合包做完的时候，我会做一张花哨的宣传图，然后发到社交媒体上。考虑到我已经有了一个庞大的玩家群体，我个人又在圈内特别出名，我觉得我不适合提供关于宣传整合包的建议。但你至少可以 [/r/feedthebeast](https://www.reddit.com/r/feedthebeast/) 子版面上发布整合包的相关信息，并配上醒目的图片，让人们知道它的存在。
 
-> The promo graphic for *Bliss* was commissioned from Kach and made specifically to appeal to a more casual crowd.
-> 
+> *Bliss* 的宣传图是委托 Kach 制作的，专门用来吸引更多的休闲玩家。
 
-Set up a GitHub to take in bugs, maybe a Discord server to chat with the pack’s players, and throw it on CurseForge. Congratulations, your pack is now released.
+建立一个 GitHub 仓库来接收 Bug 反馈，可能还要建立一个 Discord 聊天室来和玩家交流，然后就把整合包发到 CurseForge 上去。恭喜，你的整合包发布了。
 
-# 🔄 Post-Release
+# 🔄 整合包发布之后
 
-Now that the pack is out for everyone to try, we need to talk about continuing it.
+现在这个整合包已经公开给任何想要玩玩看的人了。我们接下来讨论一下怎么对整合包项目进行后续的维护。
 
-It’s obvious you should be updating your pack reasonably often to keep up with the mod updates inside, so I won’t go into basic maintenance. Instead, I’d like to focus on how to take feedback from your players, how to dissect gameplay, and how to approach content updates.
+很显然，你应当每隔一段适当的时间就更新一次整合包，伴随而来的是更新里面包含的 MOD，所以我不会在这里讨论基础的项目维护，而是讨论如何处理玩家反馈，如何剖析游戏玩法，以及如何对待内容更新。
 
-### Feedback is dangerous
+### 谨慎听取反馈
 
-Everyone has an opinion, but not all opinions are made equal. When listening to feedback from your players, there are two important steps in assessing it: **Filtering** and **Distilling**.
+人人都有自己的观点，但并非所有的观点都生而平等。听取并评估玩家的反馈时，有两个重要步骤：**过滤** 和 **提取**。
 
-**Filtering** describes the process of figuring out which feedback is appropriate and which isn’t. Often filtering involves understanding who your target audience is, and what sort of feedback falls outside that of your target audience.
+**过滤** 意味着把区分合理的和不合理的反馈。这个过程通常需要你认识到哪些玩家是你的目标玩家、哪种反馈不属于你的目标玩家。
 
-Understanding what feedback is appropriate is important. If you’re making a pack focused on a relaxed and sedentary gameplay experience, you may want to discard feedback from someone asking for more combat and adventure, for example.
+认清哪些反馈是合理的很重要。例如，如果你整合包的主题是轻松和休闲，你就可能要摒弃要求更多战斗、冒险内容的反馈。
 
-The more people you want to appeal to, the less focused your experience will have to be. Sometimes it is worth taking off-target feedback to expand your audience, but more often than not, those players might be better served by a different pack.
+你越是想吸引更多的玩家，你就越是不得不去做一个游戏体验的主题更加不明确的整合包。有时候听取一个脱离主题的反馈，从而扩大玩家群体，是值得的；但更多的时候是不值得的，可能有另外一个整合包更适合那些玩家。
+> 经常有人建议我往 *Crucial 2* 和 *Bliss* 里加 Create 机械动力 MOD。尽管最后 *Crucial 2* 通过 Pull Request 加入了对机械动力 MOD 的兼容，我仍然坚持不把它加入到基础整合包当中，因为它和整合包想要呈现的游戏内容不适配。
 
-> *Create* is very often suggested as an addition for both *Crucial 2* and *Bliss.* While *Crucial 2* would eventually receive optional integration via a Pull Request, I’ve stood firm in not adding it to the base packs, as it does not fit what the pack is trying to do.
-> 
+**提取** 意味着认识到一条反馈 *真正意义上* 意味着什么——你要深入研究问题的根源，而不只是听到玩家反馈的表面意义。
 
-**Distilling** means understanding what a bit of feedback *truly* means - it’s delving into the root of an issue, rather than taking something a player says at face value.
+很多时候，玩家可能会抱怨一些事情，试图自己找出问题或解决方案，然后向你提出他们的结论。然而问题是，大多数玩家并不是游戏设计师，他们的结论往往是错误的。
 
-Very often, a player might complain about something, attempt to identify the problem or a solution on their own, and then pitch you their conclusion. The problem here is that most players aren’t game designers, and their conclusion is very often wrong.
+这里有个例子。有许多 *Crucial 2* 的玩家要求加入 Simple Storage Network 简单存储 MOD，而这个 MOD 比整合包其他 MOD 复杂得多，我绝对不想加。此时我面临下面两个问题：
 
-Here’s an example. In *Crucial 2*, many players had requested the *Simple Storage Network* mod - a mod I absolutely did not want to add to the pack due to the complexity difference. I was faced with the following problem:
+- 这个反馈是合理的吗？如果是，那么问题的根源在哪呢？
 
-- Is this feedback appropriate? If so, what’s the root cause of the issue?
+首先，我用“这个 MOD 超出了整合包的范围”的理由，否决了这个反馈的提议。不过，在进一步的检查中，我提取出了背后的问题：之所以玩家要求一个存储的解决方案，是因为整合包中存在存储相关的问题。整合包里不同种类的物品太多，没有足够的空间来存放。
 
-Since the suggested mod is out of scope, it would be easy to dismiss the feedback as out of scope itself, which I did for a bit. On a further inspection, though, I distilled the problem down - people were asking for a storage solution because the pack has a storage problem. There were too many different items and not enough space to put them.
-
-This seems pretty obvious in hindsight, but that wasn’t what I was being told. I was being told to “add this mod…”, and I had to extrapolate the “…to solve this problem” part. Knowing what the root issue behind the feedback was, I could now fix the complaints without doing directly what I was requested and didn’t want to do.
+你从事后的角度看，问题就非常明显；但我当时听到的，可不是这样。他们和我说“你加这个 MOD...”，而我则必须推理出“用...解决这个问题”的部分。正因为我认清了反馈背后的问题根源，我现在才能够在不用采取玩家建议我做、但我不愿意做的那种解决方案的前提下，解决这个问题。
 
 > In order to solve the storage problem in *Crucial 2*, I added the Crate to *Quark Oddities,* which was specifically designed to hold a high variety of items, but not a high quantity.
 > 
