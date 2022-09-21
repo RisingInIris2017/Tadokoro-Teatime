@@ -478,9 +478,9 @@ Default Options MOD 让你可以给玩家预设一套自定义的选项配置，
 
 ### 谨慎听取反馈
 
-人人都有自己的观点，但并非所有的观点都生而平等。听取并评估玩家的反馈时，有两个重要步骤：**过滤** 和 **提取**。
+人人都有自己的观点，但并非所有的观点都生而平等。听取并评估玩家的反馈时，有两个重要步骤：**筛选** 和 **提取**。
 
-**过滤** 意味着把区分合理的和不合理的反馈。这个过程通常需要你认识到哪些玩家是你的目标玩家、哪种反馈不属于你的目标玩家。
+**筛选** 意味着把区分合理的和不合理的反馈。这个过程通常需要你认识到哪些玩家是你的目标玩家、哪种反馈不属于你的目标玩家。
 
 认清哪些反馈是合理的很重要。例如，如果你整合包的主题是轻松和休闲，你就可能要摒弃要求更多战斗、冒险内容的反馈。
 
@@ -499,46 +499,43 @@ Default Options MOD 让你可以给玩家预设一套自定义的选项配置，
 
 你从事后的角度看，问题就非常明显；但我当时听到的，可不是这样。他们和我说“你加这个 MOD...”，而我则必须推理出“用...解决这个问题”的部分。正因为我认清了反馈背后的问题根源，我现在才能够在不用采取玩家建议我做、但我不愿意做的那种解决方案的前提下，解决这个问题。
 
-> In order to solve the storage problem in *Crucial 2*, I added the Crate to *Quark Oddities,* which was specifically designed to hold a high variety of items, but not a high quantity.
-> 
+> 为了解决 *Crucial 2* 玩家遇到的物品存储问题，我给 Quark Oddities 夸克-奇思妙想 MOD 加了一个“板条箱”方块。我把它设计成专门用来存储种类很多、但数量不大的物品。
 
-Misunderstanding feedback can lead to your pack getting worse over time, or it losing its focus and charm. Players generally mean well when they take the time to come to you, but incorrectly reading their pleas can mean eroding the quality design you put time into.
+错误理解玩家的反馈，可能导致你的整合包随着时间推移越来越差，或者失去其主题和吸引力。愿意花时间来找你的玩家，通常是怀着好意的。但是如果你误解了他们的请求，你的修改就可能损害你花了时间去设计的游戏质量。
 
-Taking in feedback from players, much like most of the development process, is not a science. Over time you may learn how to filter better, and not over-filter, or to better distill meaning from more opaque feedback. Taking in feedback is a skill, and as such, one you build over time.
 
-> In *Bliss*, I set up a long Google Docs form to take feedback during the beta stage, which asked many specific questions I wanted to know.
-> 
+听取玩家的反馈，与绝大多数开发流程一样，不是有公式和定律可循的科学。经过一段时间，你可能会学会如何更好地筛选反馈，并避免过度筛选；或者，你能够更好地从模糊的反馈中提取出反馈的含义。接受反馈是一种技能，因此，你要随着时间的推移来培养这种技能。
 
-### Gameplay is precious
+> *Bliss* 的 Beta 测试阶段中，我准备了一份长长的 Google Docs 谷歌在线表格来获取反馈，它向玩家提出了许多我希望了解的具体问题。
 
-If you have access to a let’s play, live stream, or live blog, **treasure it**.
+### 重视游戏实况
 
-Unfiltered gameplay without your intervention is the greatest source of feedback you can ask for. By watching a player experience your creation, you can see what they do, how they react to your changes, how they adapt and what their thoughts are. If possible, try not to intervene, as your average player won’t have your help, and you want to keep that source of raw feedback handy.
+如果你的整合包有在试玩视频、直播或文字实况中上镜的机会，请 **重视** 这样的机会。
 
-> For both *Crucial 2* and *Bliss,* I had my friends Wyld and Ellpeck stream the pack, while I lurked in chat to watch them play and their chat’s reactions. I also watched let’s plays. Both these sources proved invaluable in finding needed changes.
-> 
+没有你的干预、未经剪辑的游戏实况，是你最好的反馈来源。通过观察体验你的整合包的玩家，你可以看到他们会做什么，他们对你的魔改作何反应，他们如何适应这个整合包，以及他们的想法是什么。如有可能，尽量不要干预他们，毕竟你的玩家一般得不到你的直接帮助，同时你要保持这种原始反馈的来源，以便于使用。
 
-### Content updates are scary
+> 我让我的两个朋友 Wyld 和 Ellpeck 直播了 *Crucial 2* and *Bliss* 两个整合包的游玩实况，而我则在直播间聊天框潜水，观察他们的游玩过程和聊天框里的反应。我也看整合包的试玩视频。事后证明，这些反馈来源对于我找到需要改进的内容起到了无法估量的作用。
 
-Read. Every. Changelog.
+### 慎重更新内容
 
-When mods add new content, it’s important to take it with the same scrutiny that you applied to adding a new mod.
+读 每  一 个 更 新 日 志。（译者注：这里模仿了原文的写法）
 
-Remember what I said before, that content starts as *not added*. For updates, you have to act as the gatekeeper for the new features.  Everything that applies when adding the mod applies here too.
+每个 MOD 添加新内容的时候，要像对待新添加的 MOD 一样仔细对待它，这很重要。
 
-It’s important to understand that once a feature is *added* to the modpack, you can no longer go back to *not added -* the best you can do is *removed -* and players **do not like** content they’re used to being removed.
+回忆一下我前面所说的话，游戏内容最初的状态，是 *还没有加* 的状态。对于整合包的更新来说，你要像守门人一样检查新增的游戏内容。前面所有关于添加 MOD 的讨论，这里也都适用。
 
-> *Crucial 2* had inconsistent maintenance updates due to mods updating regularly with new content for 1.16. Every update required me to assess the new features.
-> 
+这其中的关键在于，你要理解这样一件事：一旦一个游戏内容被 *加入* 到整合包中，你就无法使它回到 *没加* 的状态了。你顶多可以把这些内容 *删除*；但是，玩家是 **不喜欢** 你把他们习惯了的内容删掉的。
 
-# 🎁 Wrap-Up
+> *Crucial 2* 的维护更新间隔的时间并不是固定的，因为 MOD 会定期更新 1.16 的新内容，而每次更新整合包时，我都需要评估 MOD 新加的功能。
 
-That’s all I got for you today. I hope this document helped you learn about the pack development process, or at least grab a few tips if you’re experienced already.
+# 🎁 总结
 
-Big thank you to Rorax, amadornes, Kamefrede, and Kinomora for proofreading this and helping me fix my countless grammar mistakes, and thank you to everyone who enjoyed my packs and even gave me enough confidence in my design to put it into words.
+我今天就和你说这么多。我希望这篇文章可以帮助你了解整合包的开发流程，或者，如果你已经有丰富的做包经验，这篇文章也至少可以给你一些提示。
 
-If you make any packs informed by my musings here, please give me a poke on your social media of choice, I’d love to see it.
+非常感谢 Rorax、amadornes、Kamefrede 和 Kinomora 校阅了这篇文章，帮助我订正了一大堆的语法错误。感谢所有喜欢我的整合包的玩家，你们让我对自己的设计有了足够的信心，使我敢于把它写成文字。
 
-[Discuss this post on reddit](https://www.reddit.com/r/feedthebeast/comments/xfwblh/how_i_design_modpacks_vazkiis_blog/).
+如果你受到我在这里给你的启发，做出了什么整合包的话，请在你喜欢的的社交平台上戳我一下，我很乐意看到它。
+
+[你还可以在 Reddit 上讨论这篇文章。](https://www.reddit.com/r/feedthebeast/comments/xfwblh/how_i_design_modpacks_vazkiis_blog/).
 
 <3
